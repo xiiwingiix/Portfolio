@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+
+/*font-family: 'Nanum Gothic', sans-serif;*/
+*{text-decoration: none;}
+
+/***헤더***/
+	header{width: 100%; height: 85px; position: fixed; background-color: rgba(255,255,255,0); z-index: 9999; transition: .5s;}
+	header>a.logo>img{width: 123px; height: 30px; position: absolute; top: 27px; left: 5%;}
+	header>a.logo>img:last-child {display: none;}
+	header>ul{position: absolute;left: 50%;top: 24px;transform: translateX(-50%); height:85px;}
+	header>ul>li{height: 32px; top: 35px;float: left; padding: 0 20px;transform: translateY(25%);}
+	header>ul>li:nth-child(2){transform: translateY(0);}
+	header>ul>li>a{color: #fff;font-weight: bold;}
+	header>a.bag>img{width:30px;height:30px; position: absolute; top: 27px; right: 5%; }
+	header>a.bag>img:nth-child(2){display: none;}
+	header>a.bag>p>i{display: none; position: absolute; top: 27px; right: 5%; font-size: 23px; color: #fff; }
+
+
+	/**header:hover***/
+		header:hover {background-color: rgba(255,255,255,1); z-index: 9999;}
+		header:hover a.logo>img:first-child {display: none;}
+		header:hover a.logo>img:nth-child(2) {display: block;}
+		header:hover ul>li>a{color: #000;}
+		header:hover a.bag>img:first-child{display: none;}
+		header:hover a.bag>img:nth-child(2){display: block;}
+
+		/***header>a:hoaver***/
+			header>ul>li:hover a{color: }
+			header>a.bag:hover img{width: 35px; height: 35px;}
+
+	/***header_scroll***/
+		.scr_backW{background: #fff; color: #000;}
+
+
+/***섹션1***/
+	section.sec1{width: 100%; position: relative;}
+	section.sec1>ul>li{list-style: none; display: none;}
+	section.sec1>ul>li:nth-child(1){display: block;}
+	section.sec1>ul>li>img{width: 100%;}
+	section.sec1>ul.main1>li>img{display: block;}
+	section.sec1>ul.main2>li>img{display: none;}
+	section.sec1>div.atc{position: absolute; bottom: 22%;left:5%;}
+	section.sec1>div.atc>img{width: 4%;}
+	section.sec1>div.atc>a>p{font-size: 15px; color: #fff; text-decoration: underline;}
+
+/***섹션2***/
+	section.sec2{width: 100%; }
+	section.sec2>h2{color: #2d2b2a; font-size: 29px; font-weight: bold; text-transform: uppercase; padding: 152px 0 50px 0; width: 300px; text-align: center;margin: 0 auto; letter-spacing: 5px;}
+	section.sec2>article{width: 60%; overflow: hidden; margin: 0 auto;}
+	section.sec2>article>a{float: left; margin: 1% 1% 50px 1%; width: 31.3333%; }
+	section.sec2>article>a>img{width: 100%; }
+	section.sec2>article>a>img:nth-child(1){display: block;}
+	section.sec2>article>a>img:nth-child(2){display: none;}
+	section.sec2>article>a>div{color: #fff;text-align: center;line-height: 1.4; font-weight: lighter; padding:15px 0;}
+	section.sec2>article>a>div>p>span{text-transform: uppercase;font-weight: bold;}
+	section.sec2>a>p{text-align: center; color:#2d2b2a; margin: 0px 0 200px 0; font-size: 25px; font-weight: bold;}
+
+	/***img:hover***/
+		section.sec2>article>a:hover img:nth-child(1){display: none;}
+		section.sec2>article>a:hover img:nth-child(2){display: block;}
+		section.sec2>article>a:hover div{color: #fff; background: #000;}
+
+	/***section.sec2>a:hover***/
+		section.sec2>a:hover p{text-decoration: underline; font-size: 25px;}
+
+/***섹션3***/
+	section.sec3{position: relative;}
+	section.sec3>video{width: 100%;}
+	section.sec3>p {color: #fff;font-size: 27px; font-weight: 100; position: absolute; bottom: 50px; left: 50%; transform: translate(-50%); text-align: right; } 
+
+/**섹션4***/
+	section.sec4{width: 100%; height: 1200px; position: relative;}
+	section.sec4>div.marquee {width: 100%;overflow: hidden; background: rgba(255,255,255, .5); color: #2d2b2a; font-weight: lighter; position:absolute; top: 170px; padding: 5px 0; font-size: 24px; letter-spacing: 5px;}
+	section.sec4>img{width: 63%; position: absolute; top: 300px; left: 0%; }
+	section.sec4>p:nth-child(3) {width: 35%; text-align: center; font-size: 25px; position: absolute;top: 50%; right: 4%; z-index: 9999; background-color: rgba(255,255,255,1);padding: 5px; font-weight: bold;}
+	section.sec4>a>p{font-size: 25px;position: absolute;top: 57%; right: 7%; color: #000; font-size: 20px; transition: .3s; background: #fff; padding: 5px;}
+	section.sec4>p:nth-child(5) {position: absolute;top: 60%; right: 15%; font-weight: bold;letter-spacing: 2px; font-size: 25px;}
+		/***p:hover***/
+		section.sec4>a>p:hover{ background-color: #000; color: #fff; }
+
+/***섹션5***/
+	section.sec5>div:nth-child(1){width: 100%; height: 576px; background-color: #000;}
+	section.sec5>div>video{position: absolute; left: 50%; transform: translateX(-50%);}
+	section.sec5>div:nth-child(2){width: 100%; height: 500px; position: relative; text-align: center; }
+	section.sec5>div>p:nth-child(1){font-size: 25px; font-weight: bold; letter-spacing: 3px; margin: 50px 0 30px 0;}
+	section.sec5>div>input{width:20%;text-align: center; font-size: 15px; font-weight: lighter; letter-spacing: 2px; padding: 15px 3%; border:none; border-bottom: 1px solid;  }
+	section.sec5>div>ul{ width: 486px; margin : 40px auto; font-size: 15px; font-weight: lighter; letter-spacing: 3px; overflow: hidden;}
+	section.sec5>div>ul>li{float: left; text-align: center;}
+	section.sec5>div>ul>li>a{color: #000; margin: 30px; font-weight: bold; transition: .5s;}
+
+		/**a:hover***/
+
+		section.sec5>div>ul>li>a:hover{font-size: 1.2em;}
+	
+/***푸터***/
+	footer>p{font-size: 12px; width: 61%; margin: 50px auto; text-align: center; line-height: 1.5;}
