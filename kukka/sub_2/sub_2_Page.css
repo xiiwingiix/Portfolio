@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* Coded by NHSung */
+
+/* 메인 스타일 CSS */
+
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+/*	
+	font-family: 'Nanum Gothic', sans-serif;
+	font-family: 'Roboto', sans-serif;
+*/
+html{width: 100%; height: 100%;}
+*{text-decoration: none; font-family: 'Nanum Gothic', sans-serif; box-sizing: border-box; text-align: center; color: #2d2b2a;}
+h1{font-family: 'Roboto', sans-serif;font-weight: bold; font-size: 39px; text-transform: uppercase; margin-top: 70px;}
+.brwonBx{width: 120px; height: 55px; background: #e8d6bb; color: #fff; line-height: 55px;  font-weight: bold; text-transform: uppercase; border:none; outline: none;}
+.brwonBx>a{color: #fff;}
+.brwonBx:hover{background: #c2b197;}
+.brown{color: #c2b197;}
+
+
+/*** 헤더 ***/
+	.login{width: 100%; height: 40px; background: #ebebeb; }
+	.login .wrap{width: 62.5%; margin: 0 auto; position: relative;}
+	.login p{line-height: 40px; font-family: 'Roboto', sans-serif; font-weight: 400; width: 350px; }
+	.login ul{overflow: hidden; position: absolute;right: 0px; top: 0; bottom: 0; margin: auto 0; height: 17px;}
+	.login li{float: left; padding: 0 15px; font-size: 14px;}
+
+	.nav {width: 62.5%;  margin: 0 auto;}
+	.nav>a>img {width: 489px; display: block;margin: 50px auto;}
+	.nav ul{overflow: hidden; width: 1050px;margin: 0 auto;}
+	.nav li{float: left; font-size:16px; font-weight: bold; padding: 20px 23px 20px 25px; text-align: center;}
+	.nav a {color: #2d2b2a;}
+
+	.nav a:hover{color:#c2b197; }
+
+article {width: 100%; border-top: 3px solid #ededee;}
+/***섹션1***/
+	.sec1{width: 62.5%; margin: 0 auto; overflow: hidden; padding:30px 0 90px; overflow: hidden;}
+	.myBtnContainer {overflow: hidden; }
+	.btn { border: none; outline: none; padding: 10px 22px;  cursor: pointer; float: left; margin: 80px  0px 20px 10px; color: #c2b197; background: #fff;}
+	.btn:hover {background: #d3c5af; color: #fff;}
+	.btn.active{background: #d3c5af; color: #fff;}
+	.figWrap{clear: both;}
+	figure{width: 31.3333%; float: left; margin: 0 1% 100px 1% ;}
+	img{width: 100%;}
+	figcaption {margin-top: 30px; line-height: 2; letter-spacing: -1px;}
+	.subtitle { font-weight: bold; }
+
+
+/***푸터***/
+	footer{width: 62.5%; height: 80px; margin: 0 auto; border-top: 1px solid #c2b197;position: relative;}
+	footer p {float: left; line-height: 80px; color: #c2b197;}
+	footer p:nth-child(2) {position: absolute;right: 0;}
+	footer p a{color: #c2b197; padding: 0 10px;}
