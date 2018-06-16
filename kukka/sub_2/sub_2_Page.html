@@ -78,7 +78,7 @@
 				</a>
 			</figure>
 			<figure class="filterDiv seasonalGreen sail">
-				<a href="#">
+				<a href="sub_2_detailPage/sub_2_detailPage.html">
 					<img src="images/orangeJasmine.jpg" alt="오렌지자스민">
 					<figcaption>
 						<span class="subtitle">[kukkaXHaBITAT] 나의 우간다 오렌지 나무 </span><br> 
@@ -129,13 +129,59 @@
 	<footer>
 		<p> &copy;Copyright Nahye All Rights Reserved.</p>
 		<p>
-			<a href="../../../index.html">NH 포트폴리오로 돌아가기</a>
+			<a href="../../index.html">NH 포트폴리오로 돌아가기</a>
 		</p>
 	</footer>
 
 <!--스크립트-->
 <script>
+	//filter 스크립트 
+	filterSelection("all")
+	function filterSelection(c) {
+	  var x, i;
+	  x = document.getElementsByClassName("filterDiv");
+	  if (c == "all") c = "";
+	  for (i = 0; i < x.length; i++) {
+	    NHRemoveClass(x[i], "show");
+	    if (x[i].className.indexOf(c) > -1) NHAddClass(x[i], "show");
+	  }
+	}
 
+	// Show filtered elements
+	function NHAddClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+	    if (arr1.indexOf(arr2[i]) == -1) {
+	      element.className += " " + arr2[i];
+	    }
+	  }
+	}
+
+	// Hide elements that are not selected
+	function NHRemoveClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+	    while (arr1.indexOf(arr2[i]) > -1) {
+	      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+	    }
+	  }
+	  element.className = arr1.join(" ");
+	}
+
+	// Add active class to the current control button (highlight it)
+	var btnContainer = document.getElementById("myBtnContainer");
+	var btns = btnContainer.getElementsByClassName("btn");
+	for (var i = 0; i < btns.length; i++) {
+	  btns[i].addEventListener("click", function() {
+	    var current = document.getElementsByClassName("active");
+	    current[0].className = current[0].className.replace(" active", "");
+	    this.className += " active";
+	  });
+	}
 </script>
 
 </body>

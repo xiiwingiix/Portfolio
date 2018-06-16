@@ -101,7 +101,7 @@ article {width: 100%; border-top: 3px solid #ededee;}
 /***센션2-3***/
 	.subSec3{width:75%; margin: 200px auto; overflow: hidden;}
 	.subSec3 button.brwonBx{float: right; margin-bottom: 6px;}
-	.title{overflow: hidden; height: 55px; border-top: 1px solid; line-height: 55px; clear: both; }
+	.title{overflow: hidden; height: 55px; border-top: 1px solid; line-height: 55px; clear: both; cursor: pointer;}
 	.line:last-child{border-bottom: 1px solid;}
 	.title>div{float: left; text-align: left;}
 	.date{width: 20%; text-indent: 10px;}
