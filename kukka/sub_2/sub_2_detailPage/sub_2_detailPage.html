@@ -461,16 +461,17 @@
 	        }
 	    });
 	}
+	
 //섹션2-2 (슬라이드 메뉴)
 	var a = 1;
 	slide(a);
 
-	function plusSlides(n) {
-	  	slide(a += n);
+	function plusSlides2(nt) {
+	  	slide(a += nt);
 	}
 
-	function currentSlide(n) {
-	 	slide(a = n);
+	function currentSlide2(nt) {
+	 	slide(a = nt);
 	}
 
 	function slide(n) {
@@ -483,17 +484,16 @@
 	  	}
 	  slides[a-1].style.display = "block";  
 	}
+
 //섹션2-3 (아코디언메뉴)
 	var title = document.getElementsByClassName("title");
 	var b;
 
 	for (b = 0; b < title.length; b++) {
 	    title[b].addEventListener("click", function() {
-	        /* Toggle between adding and removing the "active" class,
-	        to highlight the button that controls the panel */
+
 	        this.classList.toggle("active");
 
-	        /* Toggle between hiding and showing the active panel */
 	        var panel = this.nextElementSibling;
 	        if (panel.style.display === "block") {
 	            panel.style.display = "none";
