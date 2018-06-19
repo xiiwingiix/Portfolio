@@ -19,4 +19,22 @@
 	  });
 
 
+//스크롤 시 nav 색상 변경
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
 
+    if (scroll <= 800) {
+    	$("#gnb a").removeClass("scrolling");
+        $("#gnb li:nth-child(1) a").addClass("scrolling");
+    } else if (scroll<=1800) {
+        $("#gnb a").removeClass("scrolling");
+        $("#gnb li:nth-child(2) a").addClass("scrolling");
+    } else if (scroll<=3300) {
+        $("#gnb a").removeClass("scrolling");
+        $("#gnb li:nth-child(3) a").addClass("scrolling");
+    } else {
+        $("#gnb a").removeClass("scrolling");
+        $("#gnb li:nth-child(4) a").addClass("scrolling");
+    }
+
+});
