@@ -49,6 +49,17 @@ $(window).on("scroll", function() {
 	$('.sec6Logo>img').css({"transform" : "rotate("+sec6s+'deg)'});
 });
 
+//sec7 [Marquee tool] 
+$('.store').marquee({
+    duration: 10000,
+   	gap: 0,
+  	delayBeforeStart: 0,
+    direction: 'left',
+    duplicated: true,
+	pauseOnHover: true
+});
+
+//sec8 nav
 $(window).on("scroll", function() {
 	var scrollBottom = $(window).scrollTop() + $(window).height();
 	if (scrollBottom>=11509&& scrollBottom<=11802) {
@@ -60,14 +71,4 @@ $(window).on("scroll", function() {
 		$('.sec8Nav6>a>span').animate({'opacity': '1'},3000);
 	}else {
 	}
-});
-
-//sec7 [Marquee tool] 
-$('.store').marquee({
-    duration: 10000,
-   	gap: 0,
-  	delayBeforeStart: 0,
-    direction: 'left',
-    duplicated: true,
-	pauseOnHover: true
 });

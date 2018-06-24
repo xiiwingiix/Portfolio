@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/* 메인 스타일 CSS */
+
+/* Google Web Fonts */
+/*	
+	font-family: 'Assistant'; 
+	font-weight: 200(normal),bold, 800(Extra-bold); 
+*/
+/*
+	메인 색			: 하늘 - #96c3e2;
+	폰트 색 		: 블랙 - #221815;
+	포인트 색 		: 레드 - #e94340;
+	이미지 배경색 	: 그레이 - #efefef;
+*/
+html{width: 100%; height: 100%;}
+*{text-decoration: none; font-family: 'Assistant'; text-align: center; color: #221815;}
+a {color: #221815; }
+a:hover{cursor: url(../img/cursor.png), auto; }
+.Title{font-size: 80px; font-weight: bold;letter-spacing: -5px; text-transform: uppercase; text-align: left;}
+.Text{line-height: 1.4; font-size: 14px; text-align: left;}
+.imgBox img, .product img {position: absolute;top: 50px; left: 20px; }
+
+/*** 헤더 ***/
+	/*로고*/
+		.logo { width: 100px; height: 100px; position: fixed;top:20px; left:26px; z-index: 9999;}
+		/* 마우스 이벤트*/
+			.logo:hover {animation: ani_logo 0.5s infinite ease;}
+				@keyframes ani_logo {
+				    from {top: 5px; left:26px;}
+				    to{top: 25px; left:26px;}
+				}
+	/*cart*/
+		.blueBg { width:140px; height:40px; line-height: 40px; background: #96c3e2; }
+		#blueBgPosition{position: fixed; top: 20px; right: 20px; z-index: 999;}
+		.blackBg{ background: #000; overflow: hidden; width: 140px; height: 0; transition: .5s ease; }
+		.blackBgPosition{position: absolute;bottom: 0; left: 0; right: 0;z-index: 9999;}
+		.text{ color: #000; font-size : 18px; text-transform: uppercase; font-weight: bold; transition: 0.3s; letter-spacing: 2px; font-family: 'Assistant'; font-weight: bold;}
+		/* 마우스 이벤트*/
+			.cart:hover .blackBg{height: 100%;}
+			.cart:hover .text{color: #96c3e2;z-index: 9999; position: absolute;bottom: 0; left: 0; right: 0;}
+	/*menu*/
+		.menuBlackBg {width: 96px; height: 42px; background: #000; line-height: 42px; transform: rotate(-90deg); transform-origin: 0;position: fixed;top: 0; bottom: 0; left:26px; margin:  auto 26px;z-index: 999;}
+		.menuBlueBg{position: absolute;bottom: 0; left: 0; right: 0; background: #96c3e2; overflow: hidden; width: 96px; height: 0; transition: .5s ease; z-index: 9999;}
+		.menuText {color: #96c3e2; font-weight: bold;}
+		/* 마우스 이벤트 */
+			.menu:hover .menuBlueBg{height: 100%;}
+			.menu:hover .menuText{color: #000; z-index: 9999;position: absolute;bottom: 0; left: 0; right: 0;}
+	/*mark*/
+		.mark{position: fixed;bottom: 20px; left: 26px; text-align: left;}
+		.markText{color: #000; line-height: 1.5; font-size: 14px; font-weight: 200;}
+		/* 마우스 이벤트*/
+		.mark:hover {text-decoration: underline;}
+	/*sns(facebook, instagram)*/
+		.facebook, .instagram {font-size: 30px; font-weight: bold; z-index: 999; }
+		.facebook {position: fixed; bottom: 70px; right: 50px; }
+		.instagram {position: fixed; bottom: 20px; right: 50px; }
+		i{transition: .3s;}
+		/*마우스 이벤트*/
+		.facebookLi:hover i {transform: rotate(-30deg); }
+		.instagramLi:hover i {transform: rotate(-30deg); }
+/*** sec 1 ***/
+	.sec1{width: 75%; margin: 0 auto;padding-top: 164px; overflow: hidden; }
+	h1{font-size: 86px; padding-bottom: 158px;}
+	.content li{width: 45%;float: left; margin-bottom: 82px;}
+	.content li:nth-child(2n+1){margin-right: 10%;}
+	.imgbox{float: left; margin-right: 30px;}
+	.imgbox img:first-child{display: block;}
+	.imgbox img:last-child{display: none;}
+	h2{font-size: 24px; text-align: left; padding-bottom: 34px;}
+	.textbox {position: relative; }
+	.textbox p{text-align: left; font-size: 18px; line-height: 1.5;}
+	#blueBgSec1Position {position: absolute;top: 222px; left: 272px; width: 112px; height: 45px;line-height: 45px;font-size: 16px;}
+	#blueBgSec1Position .text {font-size: 16px; letter-spacing: 0px;}
+	#blackBgSec1Position{width: 112px;position: absolute;bottom: 0; left: 0; right: 0;z-index: 9999;}
+	/* 마우스 이벤트*/
+		.imgbox:hover img:first-child{display: none;}
+		.imgbox:hover img:last-child{display: block;}
+		#blueBgSec1Position:hover .blackBg{height: 100%;}
+		#blueBgSec1Position:hover .text{color: #96c3e2;z-index: 9999; position: absolute;bottom: 0; left: 0; right: 0; background: }
+/** sec2***/
+	.sec2{width: 75%; margin: 340px auto 0 auto; overflow: hidden; position: relative;}
+	.sec2wrap{float: left;}
+	.sec2wrap img {margin-left: 226px;}
+	.sec2wrap p:nth-child(2) {font-size: 45px; font-weight: 800; position: absolute;top: 50px; left: 340px;}
+	.sec2wrap p:nth-child(3) {font-size: 45px; font-weight: bold; position: absolute;top: 110px; left: 490px; background: #221815; color: #96c3e2; padding: 20px 40px; cursor: pointer;}
+	.sec2wrap p span {font-size: 45px; font-weight: bold; padding-left: 15px; color: #96c3e2;}
+/***sec8***/
+	.sec8{width: 100%; height: 570px; background: url(../img/bg4.png)no-repeat; position: relative;}
+	.sec8Nav {font-size: 24px; font-weight: bold;line-height: 1.7; padding : 200px 0 0 1450px;}
+	.sec8Nav li {width: 280px; text-align: left; transform: rotate(-15deg);  position: relative;}
+	.sec8Nav1 .arrow {display:none; position: absolute;top: 1; right: 150px; }
+	.sec8Nav2 .arrow {display: none; position: absolute;top: 1; right: 150px;}
+	.sec8Nav3 .arrow {display: none; position: absolute;top: 1; right: 20px;}
+	.sec8Nav4 .arrow {display: none; position: absolute;top: 1; right: 150px;}
+	.sec8Nav5 .arrow {display: none; position: absolute;top: 1; right: 150px;}
+	.sec8Nav6 .arrow {display: none; position: absolute;top: 1; right: 90px;}
+	.sec8Nav a { width: 280px; }
+	.sec8Nav span {font-weight: bold;opacity: 0;}
+	.sec8Nav2 span{color: #e94340;}
+	.arrow {color:#221815;}
+	.sec8 footer{position: absolute;bottom: 28px; left: 32px;}
+
+	.sec8Nav1:hover .arrow{display:inline; animation: ani_Nav1 .5s; animation-fill-mode:forwards;}
+		@keyframes ani_Nav1 {
+			from {opacity:1; position: absolute; top : 1px; right: 170px; }
+			to{ opacity: 1; position: absolute;top: 1px; right: 150px;}
+		}
+	.sec8Nav2:hover .arrow{display:inline;animation: ani_Nav2 1s; animation-fill-mode:forwards;}
+		@keyframes ani_Nav2 {
+			from {opacity: 0; position: absolute; top : 1px; right: 170px }
+			to{ opacity: 1; position: absolute;top: 1px; right: 150px;}
+		}
+	.sec8Nav3:hover .arrow{display:inline;animation: ani_Nav3 .5s; animation-fill-mode:forwards;}
+		@keyframes ani_Nav3 {
+			from {opacity: 0; position: absolute; top : 1px; right: 40px; }
+			to{ opacity: 1; position: absolute;top: 1px; right: 20px;}
+		}
+	.sec8Nav4:hover .arrow{display:inline;animation: ani_Nav4 .5s; animation-fill-mode:forwards;}
+		@keyframes ani_Nav4 {
+			from {opacity: 0; position: absolute; top : 1px; right: 170px; }
+			to{ opacity: 1; position: absolute;top: 1px; right: 150px;}
+		}
+	.sec8Nav5:hover .arrow{display:inline;animation: ani_Nav5 .5s; animation-fill-mode:forwards;}
+		@keyframes ani_Nav5 {
+			from {opacity: 0; position: absolute; top : 1px; right: 170px; }
+			to{ opacity: 1; position: absolute;top: 1px; right: 150px;}
+		}
+	.sec8Nav6:hover .arrow{display:inline;animation: ani_Nav6 .5s; animation-fill-mode:forwards;}
+		@keyframes ani_Nav6 {
+			from {opacity: 0; position: absolute; top : 1px; right: 110px; }
+			to{ opacity: 1; position: absolute;top: 1px; right: 90px;}
+		}
+    @media only screen and (max-width: 1700px) {/* 낮은 해상도 조절 */
+		.sec8Nav {font-size: 24px; font-weight: bold;line-height: 1.7; padding : 200px 0 0 1050px;}
+		/*sec1*/
+		#blueBgSec1Position {position: absolute;top: 310px;}
+    }
+	
