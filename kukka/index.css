@@ -3,25 +3,26 @@
 
 /* 메인 스타일 CSS */
 
-/* Google Web Fonts */
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 /*	
-	font-family: 'Nanum Gothic', sans-serif;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'NanumGothic';
+	font-family:'Assistant';
 */
 html{width: 100%; height: 100%;}
-*{text-decoration: none; font-family: 'Nanum Gothic', sans-serif; box-sizing: border-box; text-align: center; color: #2d2b2a;}
-h1{font-family: 'Roboto', sans-serif;font-weight: bold; font-size: 39px; text-transform: uppercase;}
+*{text-decoration: none; font-family: 'NanumGothic'; box-sizing: border-box; text-align: center; color: #2d2b2a;}
+h1{font-family: 'Assistant';font-weight: bold; font-size: 39px; text-transform: uppercase;}
 .brwonBx{width: 120px; height: 55px; background: #e8d6bb; color: #fff; line-height: 55px; border-radius: 30px; font-weight: bold;box-shadow: 1px 1px 1px #5a5958; text-transform: uppercase;}
 .brwonBx>a{color: #fff;}
 .brwonBx:hover{background: #c2b197;}
-.brown{color: #c2b197;}
+.brown{color: #c2b197; font-weight: bold;font-family: 'Assistant';}
+/***알림***/
+	#noty {background: #c2b197; width: 400px; height: 40px; border-radius: 5px; float: left; position: absolute;right: 0; top: 100px; line-height: 40px; }
+	#noty p {color: #fff;}
+	#noty p span {padding-left: 30px; color: #fff; font-size: 20px; font-weight: bold; cursor: pointer;}
 
 /*** 헤더 ***/
 	.login{width: 100%; height: 40px; background: #ebebeb; }
 	.login .wrap{width: 62.5%; margin: 0 auto; position: relative;}
-	.login p{line-height: 40px; font-family: 'Roboto', sans-serif; font-weight: 400; width: 350px; }
+	.login p{line-height: 40px; font-family: 'Assistant'; font-weight: 400; width: 350px; }
 	.login ul{overflow: hidden; position: absolute;right: 0px; top: 0; bottom: 0; margin: auto 0; height: 17px;}
 	.login li{float: left; padding: 0 15px; font-size: 14px;}
 
@@ -171,8 +172,8 @@ h1{font-family: 'Roboto', sans-serif;font-weight: bold; font-size: 39px; text-tr
 	.sec7 p{font-size: 19px; line-height: 1.4;}
 	.sec7 p:nth-child(2){padding-bottom: 40px; }
 	.sec7 p:nth-child(3){padding-bottom: 60px; }
-	.sec7 div {width: 680px; margin: 0 auto;}
-	.sec7 div div {float: left; width: 300px; border: 1px solid #c2b197; margin: 5px; padding: 20px;}
+	.sec7 div {width: 780px; margin: 0 auto;}
+	.sec7 div div {float: left; width: 350px; border: 1px solid #c2b197; margin: 5px; padding: 20px;}
 	.sec7 div a:hover div.box1{background: #c2b197; color: #fff;}
 /***푸터***/
 	footer{width: 62.5%; height: 80px; margin: 0 auto; border-top: 1px solid #c2b197;position: relative;}

@@ -5,6 +5,8 @@
 	<meta A http-equiv="X-UA-Compatible" content="IE=Edge">
 	<title>NHSung | KUKKA renewal</title>
 	<link rel="stylesheet" href="../common/reset.css">
+	<link rel="stylesheet" href="../common/NanumGothic/stylesheet_Nanumgothic.css">
+	<link rel="stylesheet" href="../common/Assistant/stylesheet_Assistant.css">
 	<link rel="stylesheet" href="index.css">
 	<!--폰트 어썸_-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -12,6 +14,10 @@
 	<script src="../js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
+<!--알림-->
+	<div id="noty">
+		<p>i) 메뉴에 플랜트정기구독을 클릭해보세요. <span onclick="myFunction()">→</span> </p>
+	</div>
 <!--헤더-->
 	<header >
 		<div class="login">
@@ -286,6 +292,15 @@
 
 <!--스크립트-->
 <script>
+//noty
+function myFunction() {
+    var x = document.getElementById("noty");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 //section 1
 	var slideIndex = 0;
 	showSlides();

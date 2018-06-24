@@ -5,11 +5,17 @@
 	<meta A http-equiv="X-UA-Compatible" content="IE=Edge">
 	<title>NHSung | KUKKA renewal</title>
 	<link rel="stylesheet" href="../../common/reset.css">
+	<link rel="stylesheet" href="../../common/NanumGothic/stylesheet_Nanumgothic.css">
+	<link rel="stylesheet" href="../../common/Assistant/stylesheet_Assistant.css">
 	<link rel="stylesheet" href="sub_2_Page.css">
 	<!--제이쿼리-->
 	<script src="../../js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
+<!--알림-->
+	<div id="noty">
+		<p>i) 상품 중 "나의 우간다 오렌지 나무"를 클릭해보세요. <span onclick="myFunction()">→</span> </p>
+	</div>
 <!--헤더-->
 	<header >
 		<div class="login">
@@ -135,7 +141,18 @@
 
 <!--스크립트-->
 <script>
-	//filter 스크립트 
+
+//noty
+function myFunction() {
+    var x = document.getElementById("noty");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+//filter 스크립트 
 	filterSelection("all")
 	function filterSelection(c) {
 	  var x, i;
