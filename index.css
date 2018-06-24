@@ -3,23 +3,26 @@
 
 /* 메인 스타일 CSS */
 
-/* Google Web Fonts */
-@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Nanum+Gothic');
 /*	
-	font-family: 'Nanum Gothic', sans-serif;
-	font-family: 'Do Hyeon', sans-serif;
+	font-family: 
+		'NanumGothic' (font-weight : normal, bold) 
+		'NanumGothicExtraBold';
+	font-family: 'Do Hyeon';
 */
-html{width: 100%; height: 100%;}
 
-*{text-decoration: none; font-family: 'Nanum Gothic', sans-serif;}
+html{width: 100%; height: 100%; font-family:'NanumGothic';}
+
+*{text-decoration: none; font-family:'NanumGothic';}
 
 /*** 헤더 ***/
 	header{width: 100%; height: 100px; position: fixed; z-index: 999; }
  	header img{width: 45px; position: absolute; top: 30px; left: 3.6%;}
  	header>ul{position: absolute; bottom: 42px; right: 4%;}
- 	header>ul>li{float: left; padding: 0; font-family: 'Do Hyeon', sans-serif; font-size: 16px; text-transform: uppercase; width: 120px; text-align: center;}
+ 	header>ul>li{float: left; padding: 0;  text-transform: uppercase; width: 120px; text-align: center;}
  	header>ul>li>a{width: 120px;color: #a1a1a1;}
-	header>ul>li>a>span:last-child{display: none;font-family: 'Nanum Gothic', sans-serif; font-size: 15px;}
+	header>ul>li>a>span:first-child{font-family: 'Do Hyeon'; font-size: 16px;}
+	header>ul>li>a>span:last-child{display: none;font-family: 'NanumGothic'; font-size: 15px;}
+	.fWhite{color: #fff;}
 	.scrolling{color: #2d2b2a;}
 
 
@@ -30,23 +33,23 @@ html{width: 100%; height: 100%;}
 /*** 섹션1 ***/
 	section.sec1{width: 100%; height: 1000px;position: relative; overflow: hidden;}
 	section.sec1>p:first-child{width: 340px; height: 33px; transform: rotate(90deg); transform-origin:0; padding: 0; margin: 0;position: absolute;top:343px; left:4%; color: #2d2b2a;}
-	section.sec1>img:nth-child(2){height: 53.5%; position: relative; animation-name : ani_n; animation-duration: 3s;  animation-timing-function:ease-in-out; animation-iteration-count:1; animation-fill-mode:forwards;top: -560px; left:620px;z-index: 99;}
-	section.sec1>img:nth-child(3){height: 53.6%; position:relative; animation-name : ani_h; animation-duration: 3s; animation-timing-function: ease-in-out; animation-iteration-count:1; animation-fill-mode:forwards;   top: -560px; left: 250px;}
+	section.sec1>img:nth-child(2){height: 53.5%; position: relative; animation-name : ani_n; animation-duration: 3.7s;  animation-timing-function:ease-in-out; animation-iteration-count:1; animation-fill-mode:forwards;top: -560px; left:620px;z-index: 99;}
+	section.sec1>img:nth-child(3){height: 53.6%; position:relative; animation-name : ani_h; animation-duration: 2.9s; animation-timing-function: ease-in-out; animation-iteration-count:1; animation-fill-mode:forwards;   top: -560px; left: 250px;}
 	section.sec1>div.rightLine{width: 1px; height: 330px; background: #000;position: absolute;top:343px; right:4%; text-indent: -9999px;}
 	/***애니메이션***/
 	@keyframes ani_n {
-	    from {top: -560px; left:620px; transform: rotate(0);}
-	    20%{top: -560px; left:620px;}
-	    to {top: 260px; left:670px; }
+	    from {top: -660px; left:27.0833%; }
+	    20%{top: -660px; left:27.0833%;}
+	    to {top: 260px; left:34.8958%; }
 	}
 	@keyframes ani_h {
-	    from {top: -560px; left:250; transform: rotate(0); }
-	    to {top: 260px; left:200px;}
+	    from {top: -560px; left:44.2708%;  }
+	    to {top: 260px; left:10.4166%;}
 	}
 
 /***섹션2***/
 	section.sec2{width: 100%; position: relative; }
-	section.sec2>span{font-size: 68px;font-family: 'Do Hyeon', sans-serif; position: absolute; height: 45px;}
+	section.sec2>span{font-size: 68px;font-family: 'Do Hyeon'; position: absolute; height: 45px;}
 	section.sec2>span:nth-child(1){top: 170px;left: 270px; transition: .2s}
 	section.sec2>span:nth-child(2){top: 170px;left: 312px; transition: .2s}
 	section.sec2>span:nth-child(3){top: 170px;left: 351px; transition: .2s}
@@ -58,16 +61,16 @@ html{width: 100%; height: 100%;}
 	section.sec2>article{width: 100%; overflow: hidden; padding-top: 260px;}
 	section.sec2>article>a{width:25%; float: left; cursor: pointer; padding: 0; position: relative;}
 	section.sec2>article>a>img{width:100%; vertical-align: top;}
-	section.sec2>article>a>dl{display:none; width:100%; height:50%; transition: .3s; background: rgba(242,242,242,.8);position: absolute;bottom: 0;padding: 50px 50px; box-sizing: border-box; transition: 1s;}
+	section.sec2>article>a>dl{display:none; width:100%; height:50%; transition: .3s; background: rgba(242,242,242,.8);position: absolute;bottom: 0;padding: 50px 50px; box-sizing: border-box;}
 	section.sec2>article>a>dl>dt{color: #a8a7a7; font-weight: bold; font-size: 18px;padding: 10px 0; text-transform: uppercase;}
 	section.sec2>article>a>dl>dl{color: #2d2b2a; font-weight: bold; font-size: 16px;padding-bottom: 10px ; text-indent: 20px; text-transform: capitalize; }
 	section.sec2>a{width : 100px; color: #2d2b2a; text-align: center;margin: 0 auto; display: block;padding-top: 90px;}
 	section.sec2>a>button{width: 68px; height: 68px; outline: none; border-radius: 50%; border:none; background:#ffc63d; }
-	section.sec2>a>p{font-family: 'Do Hyeon', sans-serif; font-size: 16px; padding-bottom: 260px; padding-top: 20px; }
+	section.sec2>a>p{font-family: 'Do Hyeon'; font-size: 16px; padding-bottom: 260px; padding-top: 20px; }
 	section.sec2>div{width: 100%;}
 	section.sec2>div>img{width: 100%; }
-	section.sec2>div>p:nth-child(2){font-family: 'Do Hyeon', sans-serif; font-size: 88px;letter-spacing: 10px; text-align: center; transform: translateY(-230px);}
-	section.sec2>div>p:nth-child(2)>span{color: #2d2b2a;}
+	section.sec2>div>p:nth-child(2){ text-align: center; transform: translateY(-230px);letter-spacing: 20px;}
+	section.sec2>div>p:nth-child(2)>span{font-family: 'Do Hyeon'; font-size: 88px;color: #2d2b2a;}
 	section.sec2>div>p:nth-child(2)>span:nth-child(3n+1){opacity: 0;
     	animation:blink 4s infinite ;}
 	section.sec2>div>p:nth-child(2)>span:nth-child(3n+2){ opacity: 0;
@@ -75,7 +78,7 @@ html{width: 100%; height: 100%;}
     section.sec2>div>p:nth-child(2)>span:nth-child(3n){ opacity: 0;
     	animation:blink3 4s infinite ;}
 	section.sec2>div>p:nth-child(2)>span#yel{color: #ffc63d;}
-	section.sec2>div>p:nth-child(3){ font-weight: 19px; text-align: center;padding-top:50px; transform: translateY(-220px); }
+	section.sec2>div>p:nth-child(3){ font-size: 19px; text-align: center;padding-top:50px; transform: translateY(-220px); }
 	/***animation***/
 	@keyframes blink{
     0% {opacity:0;}
@@ -110,7 +113,11 @@ html{width: 100%; height: 100%;}
 	section.sec2>span:nth-child(6):hover{top:165px;}
 	section.sec2>span:nth-child(7):hover{top:165px;}
 	section.sec2>span:nth-child(8):hover{top:165px;}
-	section.sec2>article>a:hover dl{display:block;}
+	section.sec2>article>a:hover dl{display:block; animation: ani_dl .5s;}
+		@keyframes ani_dl {
+			from {opacity: 0;}
+			to{opacity: 1;}
+		}
 	section.sec2>a>button:hover{background:#fdb302; cursor: pointer; }
 	
 /***섹션3***/
@@ -118,7 +125,7 @@ html{width: 100%; height: 100%;}
 /************/
 	section.sec3>div { overflow:hidden; }
 	section.sec3>div:nth-child(1){width: 0px; height: 40px; background: #ffc63d; text-indent: -9999px;position: absolute; bottom: 760px; left:735px;z-index: -99;}
-	section.sec3>h1{font-family: 'Do Hyeon', sans-serif; font-size: 58px; text-align: center; letter-spacing: 2px; line-height:1.5em; }
+	section.sec3>h1{font-family: 'Do Hyeon'; font-size: 58px; text-align: center; letter-spacing: 2px; line-height:1.5em; font-weight: normal;}
 	section.sec3>div.wrap{width:73%;margin:40px auto;}
 	section.sec3>div.wrap>div{float: left; width: 25%; overflow:hidden;}
 	section.sec3>div.wrap>div>img{width: 60%; padding: 0 20%;}
@@ -141,13 +148,16 @@ html{width: 100%; height: 100%;}
 
 /***섹션4**/
 	section.sec4{width: 100%; height: 976px; background: url(images/sec5bg.jpg); }
-	section.sec4>h1{color: #fff; padding-top: 90px; font-family: 'Do Hyeon', sans-serif;font-size: 58px; letter-spacing: 2px;width: 500px; margin: 0 auto; text-align: center;}
+	section.sec4>h1{color: #fff; padding-top: 90px; font-family: 'Do Hyeon';font-size: 58px; letter-spacing: 2px;width: 500px; margin: 0 auto; text-align: center; font-weight: normal;}
 	section.sec4>p{color: #fff; padding: 40px 0 60px 0; font-size: 23px; letter-spacing: 2px;width: 500px; margin: 0 auto; text-align: center;}
-	section.sec4>div{width: 1400px; height: 620px; background: #fff; margin: 0 auto; position: relative;}
-	section.sec4>div>div:nth-child(1){width:560px; line-height: 1.2; padding: 60px 120px; font-size: 102px; font-weight: bold; border-right: 1px solid #000; box-sizing: border-box; position: absolute;top: 52px;}
-	section.sec4>div>div:nth-child(2){padding: 150px 0 0 740px;font-family: 'Nanum Gothic', sans-serif; }
+	section.sec4>div{width: 73%; height: 620px; background: #fff; margin: 0 auto; position: relative;}
+	.sec4Box{width:560px; line-height: 1.2; padding: 60px 120px; font-size: 102px; font-weight: bold; border-right: 1px solid #000; box-sizing: border-box; position: absolute;top: 52px;}
+	.sec4Box2{display: none;}
+	.sec4Box:hover .sec4Box1 {display: none;}
+	.sec4Box:hover .sec4Box2 {display: block;}
+	section.sec4>div>div:nth-child(2){padding: 150px 0 0 740px;font-family:'NanumGothic';  }
 	section.sec4>div>div:nth-child(2)>p{font-size: 21px; }
-	section.sec4>div>div:nth-child(2)>p:nth-child(1){font-family: 'Do Hyeon', sans-serif;font-size: 27px; letter-spacing: 2px; }
+	section.sec4>div>div:nth-child(2)>p:nth-child(1){font-family: 'Do Hyeon';font-size: 27px; letter-spacing: 2px; }
 	section.sec4>div>div:nth-child(2)>p:nth-child(2){font-size: 21px; letter-spacing: 2px; padding: 60px 0 90px 0;}
 	section.sec4>div>div:nth-child(2)>p:nth-child(2)>span{ font-size: 33px; font-weight: bold;padding: 0 10px; }
 	section.sec4>div>div:nth-child(2)>p:nth-child(4){ padding: 20px 0;}
@@ -156,5 +166,3 @@ html{width: 100%; height: 100%;}
 	section.sec4>div>div:nth-child(2)>p::selection{background: #ffc63d; color: #fff; }
 
 
-
-	

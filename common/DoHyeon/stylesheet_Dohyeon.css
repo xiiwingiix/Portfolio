@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Do Hyeon';
+    src: url('DoHyeon-Regular.eot');
+    src: url('DoHyeon-Regular.eot?#iefix') format('embedded-opentype'),
+        url('DoHyeon-Regular.woff2') format('woff2'),
+        url('DoHyeon-Regular.woff') format('woff'),
+        url('DoHyeon-Regular.ttf') format('truetype'),
+        url('DoHyeon-Regular.svg#DoHyeon-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

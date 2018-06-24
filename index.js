@@ -25,15 +25,19 @@ $(window).scroll(function() {
 
     if (scroll <= 800) {
     	$("#gnb a").removeClass("scrolling");
+        $("#gnb a").removeClass("fWhite")
         $("#gnb li:nth-child(1) a").addClass("scrolling");
     } else if (scroll<=1800) {
         $("#gnb a").removeClass("scrolling");
+        $("#gnb a").removeClass("fWhite")
         $("#gnb li:nth-child(2) a").addClass("scrolling");
-    } else if (scroll<=3300) {
+    } else if (scroll<=3747) {
         $("#gnb a").removeClass("scrolling");
+        $("#gnb a").removeClass("fWhite")
         $("#gnb li:nth-child(3) a").addClass("scrolling");
     } else {
         $("#gnb a").removeClass("scrolling");
+        $("#gnb a").addClass("fWhite");
         $("#gnb li:nth-child(4) a").addClass("scrolling");
     }
 

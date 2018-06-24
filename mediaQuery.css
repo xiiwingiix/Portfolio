@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+
+@media screen and (min-width: 1656px) and (max-width: 1792px) {
+	/*sec1*/
+	section.sec1>img:nth-child(2){width: auto; height: 40%;}
+	section.sec1>img:nth-child(3){width: auto; height: 40%;}
+
+	/*sec1 - animation*/
+	@keyframes ani_n {
+	    from {top: -660px; left:27.0833%; }
+	    20%{top: -660px; left:27.0833%;}
+	    to {top: 260px; left:34.8958%; }
+	}
+	@keyframes ani_h {
+	    from {top: -560px; left:44.2708%;  }
+	    to {top: 260px; left:15%;}
+	}
+	/*sec2 */
+	section.sec2>article>a>dl>dl{ font-size: 14px;}
+	/*sec4*/
+	section.sec4>div>div:nth-child(2){padding: 150px 0 0 690px;}
+
+
+}
+@media screen and (min-width: 1400px) and (max-width: 1656px) {
+	/*sec1*/
+	section.sec1>img:nth-child(2){width: auto; height: 40%;}
+	section.sec1>img:nth-child(3){width: auto; height: 40%;}
+
+	/*sec1 - animation*/
+	@keyframes ani_n {
+	    from {top: -660px; left:27.0833%; }
+	    20%{top: -660px; left:27.0833%;}
+	    to {top: 260px; left:34%; }
+	}
+	@keyframes ani_h {
+	    from {top: -560px; left:44.2708%;  }
+	    to {top: 260px; left:12%;}
+	}
+	/*sec2 */
+	section.sec2>article>a>dl{padding: 30px 40px;}
+	section.sec2>article>a>dl>dt{font-size: 14px;}
+	section.sec2>article>a>dl>dl{font-size: 12px;}
+	/*sec4*/
+	.sec4Box{width:40%; padding: 80px 60px; font-size: 90px; }
+	section.sec4>div>div:nth-child(2){padding: 150px 0 0 600px;}
+
+
+}
+
