@@ -1,0 +1,16 @@
+<link href="https://fonts.googleapis.com/css?family=Assistant|Londrina+Shadow|Nanum+Gothic|Timmana" rel="stylesheet">
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Assistant|Londrina+Shadow|Nanum+Gothic|Timmana');
+</style>
+
+font-family: 'Londrina Shadow', cursive;
+font-family: 'Timmana', sans-serif;
+font-family: 'Assistant', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+
+ÄÃ·¯
+#221815;
+#e94340;
+#96c3e2;
+
