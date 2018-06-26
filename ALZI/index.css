@@ -24,9 +24,9 @@ h3 { font-size: 24px; text-transform: uppercase;}
 	.wrap { width: 62.5%; height : 100%; /*width:1200px;*/margin: 0 auto; position: relative;}
 	.subtitle { font-size: 25px; padding-top: 78px; } 
 	.subtitle div { text-indent: -9999px; background:#f7bb43; width: 290px; height: 4px; margin: 0 auto;} 
-	.title { font-size: 170px; width: 500px; margin: 0 auto; position: relative; }
+	.title { font-size: 170px; width: 330px; margin: 0 auto; position: relative; }
 	.title h1{ position:relative; z-index: 9;}
-	.title div{	background:#f7bb43; width: 36px; height: 36px; border-radius: 18px; position: absolute;bottom: 28px; right: -18px; z-index: 0; text-indent: -9999px; }
+	.title div{	background:#f7bb43; width: 36px; height: 36px; border-radius: 18px; position: absolute;bottom: 0px; right: -20px; z-index: 0; text-indent: -9999px; }
 	.overview { color: #fff; width: 450px; position: absolute; bottom: 550px; }
 	.overview h3 { text-align: right; padding-bottom: 30px; font-size: 24px; }
 	.overview p { text-align: right; line-height: 1.5; }
@@ -48,7 +48,7 @@ h3 { font-size: 24px; text-transform: uppercase;}
 	.sec2Colors {width: 100%; }
 	.sec2Colors .circleG {width: 100%;}
 	.sec2Colors .circleG div {width: 30%; margin: 50px 1% 70px 1%; }
-	.sec2Colors .circleG div img {margin-bottom: 35px;}
+	.sec2Colors .circleG div img {margin-bottom: 35px; width: 100%;}
 	.sec2Colors>p{text-align: left; font-size: 16px; padding: 0 3%; line-height: 1.5;}
 	.txt {width: 100%;}
 	.txt>div {width: 100%; padding-top: 86px;}
