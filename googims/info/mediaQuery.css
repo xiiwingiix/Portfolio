@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+
+@media screen and (min-width: 1656px) and (max-width: 1792px) {
+	/*sec1*/
+
+}
+@media screen and (min-width: 1400px) and (max-width: 1656px) {
+/***sec1***/
+	.overview h3 { transform: translateX(-50px);}
+	.overview p { font-size: 15px; }
+/***sec2***/
+	.txt div p:nth-child(1) {font-size: 50px; margin-bottom: 80px;}
+	.txt div p:nth-child(1) span{font-size: 30px; }
+/***sec4***/
+	.sec4 h3 {color: #f7bb43; padding: 100px 0 50px 0;}
+
+}
+
