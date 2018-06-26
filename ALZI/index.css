@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* Coded by NHSung */
+
+/* 메인 스타일 CSS */
+
+/*	
+	font-family: 
+		'NanumGothic' (font-weight : normal, bold) 
+		'NanumGothicExtraBold';
+*/
+/*
+	노란색 #f7bb43;
+	파란색 #4b89bc;
+	검정색 #2d2b2a;
+	어두운 회색   #959394;
+*/
+
+html { width: 100%; height: 100%; font-family:'NanumGothic';}
+* { text-decoration: none; font-family:'NanumGothic'; padding: 0; margin: 0; text-align: center;}
+h3 { font-size: 24px; text-transform: uppercase;}
+
+/***sec1***/
+	.sec1 { height: 1550px; background: url(img/bg1.jpg) no-repeat;	}
+	.wrap { width: 62.5%; height : 100%; /*width:1200px;*/margin: 0 auto; position: relative;}
+	.subtitle { font-size: 25px; padding-top: 78px; } 
+	.subtitle div { text-indent: -9999px; background:#f7bb43; width: 290px; height: 4px; margin: 0 auto;} 
+	.title { font-size: 170px; width: 500px; margin: 0 auto; position: relative; }
+	.title h1{ position:relative; z-index: 9;}
+	.title div{	background:#f7bb43; width: 36px; height: 36px; border-radius: 18px; position: absolute;bottom: 28px; right: -18px; z-index: 0; text-indent: -9999px; }
+	.overview { color: #fff; width: 450px; position: absolute; bottom: 550px; }
+	.overview h3 { text-align: right; padding-bottom: 30px; font-size: 24px; }
+	.overview p { text-align: right; line-height: 1.5; }
+	.explain { width: 100%; height: 120px; border-top: 1px solid #fff; border-bottom: 1px solid #fff; margin-top: 35px;}
+	.explain div{float: left; width: 33.3333%;color: #fff; padding: 30px 0;}
+	.explain h3{padding-bottom: 10px; }
+	.move {width: 412px; height: 70px; margin: 75px auto; }
+	.move div { width: 170px; height: 60px; margin: 0 10px; float: left; line-height: 60px; border: 3px solid #fff; position: relative; }
+	.move div span{color: #fff; position: absolute;left: 0; right: 0; margin: 0 auto; z-index: 99; transition: .3s;}
+	.move div div { width: 0%; height: 60px; margin: 0 10px; border: 3px solid #fff; position: absolute; top: -3px; left: -13px;  transition: .5s; background:#fff; text-indent: -9999px;}
+	.move div:hover div{width: 100%;}
+	.move div:hover span{color: #4b89bc; }
+
+/***sec2***/
+	.sec2{width: 62.5%; height: 1858px; margin: 0 auto; padding-top: 214px;}
+	.sec2 h1 { font-size : 30px; padding-bottom: 50px; text-align: left;}
+	.sec2 div {width: 50%; float: left;}
+	.sec2 div h2 {font-size: 24px; border-bottom: 1px solid #2d2b2a; text-align: left; margin: 0 10px; padding : 20px 10px;}
+	.sec2Colors {width: 100%; }
+	.sec2Colors .circleG {width: 100%;}
+	.sec2Colors .circleG div {width: 30%; margin: 50px 1% 70px 1%; }
+	.sec2Colors .circleG div img {margin-bottom: 35px;}
+	.sec2Colors>p{text-align: left; font-size: 16px; padding: 0 3%; line-height: 1.5;}
+	.txt {width: 100%;}
+	.txt>div {width: 100%; padding-top: 86px;}
+	.txt div p {text-align: left; font-size: 16px;}
+	.txt div p:nth-child(1) {font-size: 73px; margin-bottom: 70px;}
+	.txt div p:nth-child(1) span{font-size: 43px; }
+	.txt div p:nth-child(2) span{font-weight: bold; }
+	.txt div p:nth-child(3) {line-height: 1.5; margin-top: 70px;}
+	div.icon, div.app {width: 100%;}
+	div.icon>h2, div.app>h2 {text-align: center;border: none; margin-top: 235px;}
+	.icon >div{width: 100%;}
+	div.app>h2{margin-bottom: 50px;}
+
+/***sec3***/
+	.sec3 {width: 100%; height: 4660px; background: url(img/bg2.jpg);}
+	.main {display: block; padding: 230px 0 320px 0; width: 26.8229%; margin: 0 auto;}
+	.sec3Wrap{width: 62.5%; margin: 0 auto;}
+	.sec3Wrap>div{float: left; width: 50%;height: 676px; position: relative;}
+	.sec3Wrap>div h2{font-size: 24px; position: relative; z-index: 999;}
+	#YC{text-indent: -9999px; width: 34px; height:34px; background: rgba(274, 187, 67, .5); border-radius: 17px; }
+	.sec3Wrap>div:nth-child(4n+2) #YC{position: absolute;top: -45px; left: -15px; z-index: 0;}
+	.sec3Wrap>div:nth-child(4n+3) #YC{position: absolute;top: -45px; left: 60px; z-index: 0;}
+	.sec3Wrap>div:nth-child(4n+1) img{display: block;padding: 0 8.3333% 0 25%; width: 66.6666%}
+	.sec3Wrap>div:nth-child(4n) img{display: block;padding: 0 8.3333% 0 25%; width: 66.6666%}
+	.sec3Wrap>div:nth-child(4n+2) {padding-left:5%;box-sizing: border-box;}
+	.sec3Wrap>div:nth-child(4n+2) div {height: 140px; line-height: 1.5; position: absolute;top:0; bottom: 0; margin: auto 0;}
+	.sec3Wrap>div:nth-child(4n+2) div h2 {text-align: left;padding-bottom: 10px;}
+	.sec3Wrap>div:nth-child(4n+2) div p {text-align: left; }
+	.sec3Wrap>div:nth-child(4n+3) {padding-right: 5%; box-sizing: border-box;}
+	.sec3Wrap>div:nth-child(4n+3) div{height: 140px; line-height: 1.5; position: absolute;top:0; bottom: 0; right: 5%; margin: auto 0;}
+	.sec3Wrap>div:nth-child(4n+3) div h2 {text-align: right; padding-bottom: 10px;}
+	.sec3Wrap>div:nth-child(4n+3) div p {text-align: right; }
+
+
+
+/***sec4***/
+	.sec4{width: 100%; height: 1120px; background: url(img/bg3.jpg);}
+	.sec4 h3 {color: #f7bb43; padding: 180px 0 50px 0;}
+	.dot { width: 8px; height: 8px; background: #f7bb43; border-radius: 4px; margin: 10px auto; }
+	.sec4>div:nth-child(1) {margin-bottom: 380px;}
+	h4{font-size: 74px; color: #fff; text-shadow: 2px 2px 2px #959394;padding-bottom: 55px;}
+	.sec4 p{color:#fff; font-size: 24px; font-weight: bold;}
