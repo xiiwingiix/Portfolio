@@ -31,7 +31,7 @@ $(window).scroll(function() {
         $("#gnb a").removeClass("scrolling");
         $("#gnb a").removeClass("fWhite")
         $("#gnb li:nth-child(2) a").addClass("scrolling");
-    } else if (scroll<=3747) {
+    } else if (scroll<=3740) {
         $("#gnb a").removeClass("scrolling");
         $("#gnb a").removeClass("fWhite")
         $("#gnb li:nth-child(3) a").addClass("scrolling");
