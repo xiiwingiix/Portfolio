@@ -138,7 +138,10 @@
 	<div class="sec2wrap">
 		<img src="img/dot.jpg" alt="background">
 		<p>ONLINE SHOP NOW?</p>
-		<p>GO SHOWPPING<span>→</span></p>
+		<div>
+			<p>GO SHOWPPING</p><p>→</p>
+		</div>		
+		
 	</div>
 </section>
 <!--섹션8-->
@@ -171,7 +174,7 @@
 			</li>
 			<li class="sec8Nav6">
 				<a href="#">
-					- <span>CAP & ACC<span class="arrow">  →</span></span>
+					- <span>PORTFOLIO<span class="arrow">  →</span></span>
 				</a>
 			</li>
 		</ul>	
@@ -180,20 +183,21 @@
 </article>
 <!--스크립트-->
 <script>
-$(window).on("scroll", function() {
-	var scrollBottom = $(window).scrollTop() + $(window).height();
-	if (scrollBottom>=2220&& scrollBottom<=2510) {
-		$('.sec8Nav1>a>span').animate({'opacity': '1'},500);
-		$('.sec8Nav2>a>span').animate({'opacity': '1'},1000);
-		$('.sec8Nav3>a>span').animate({'opacity': '1'},1500);
-		$('.sec8Nav4>a>span').animate({'opacity': '1'},2000);
-		$('.sec8Nav5>a>span').animate({'opacity': '1'},2500);
-		$('.sec8Nav6>a>span').animate({'opacity': '1'},3000);
-	}else {
-	}
-});
+	$(window).on("scroll", function() {
+		var scrollBottom = $(window).scrollTop() + $(window).height();
+		if (scrollBottom>=1740&& scrollBottom<=1932) {
+			$('.sec2wrap>p').animate({'opacity': '1'});
+		} else if (scrollBottom>=2220&& scrollBottom<=2510) {
+			$('.sec8Nav1>a>span').animate({'opacity': '1'},500);
+			$('.sec8Nav2>a>span').animate({'opacity': '1'},1000);
+			$('.sec8Nav3>a>span').animate({'opacity': '1'},1500);
+			$('.sec8Nav4>a>span').animate({'opacity': '1'},2000);
+			$('.sec8Nav5>a>span').animate({'opacity': '1'},2500);
+			$('.sec8Nav6>a>span').animate({'opacity': '1'},3000);
+		}else {
+		}
+	});
+
 </script>
-
-
 </body>
 </html>
