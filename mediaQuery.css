@@ -258,30 +258,41 @@
 		section.sec2>span:nth-child(8){left: 127px;}
 		section.sec2>article{padding-top: 200px;}
 
-		section.sec2>article>a{width:100%;}
-		section.sec2>article>a>dl{display:block; height:20%;background: rgba(242,242,242,.0); }
+		section.sec2>article>a{width:50%;}
+		section.sec2>article>a>dl{display:none; height:20%;background: rgba(242,242,242,.0); }
 		section.sec2>article>a>dl{padding: 20px 20px;}
 		section.sec2>article>a>dl>dt{font-size: 12px;padding: 10px 0; display: none;}
 		section.sec2>article>a>dl>dl{font-size: 12px;padding-bottom: 0px ; text-indent: 10px; color: #efefef;}
 		section.sec2>article>a>dl>dl:nth-child(5){display: none;}
-	section.sec2>a>p{padding-bottom: 150px; }
-
-		section.sec2>div>p:nth-child(2){transform: translateY(-100px);letter-spacing: 10px;}
-		section.sec2>div>p:nth-child(2)>span{font-size:40px;}
-		section.sec2>div>p:nth-child(3){ font-size: 12px; padding-top:10px; transform: translateY(-90px); }
+		section.sec2>a>p{padding-bottom: 150px; }
+		section.sec2>div>p:nth-child(2){transform: translateY(-50px);letter-spacing: 3px;}
+		section.sec2>div>p:nth-child(2)>span{font-size:20px;}
+		section.sec2>div>p:nth-child(3){ font-size: 10px; padding-top:10px; transform: translateY(-50px); }
 		#Black{color: #2d2b2a;}
-		#typed5{font-size: 12px;}
+		section.sec2>a{padding-top: 40px;}
+
+		section.sec2>a>button{width: 30px; height: 30px;}
+		section.sec2>a>button>img{width: 50%; }
+		section.sec2>a>p{font-size: 10px; padding-bottom: 80px;}
+
+
 	/*sec3*/
-		section.sec3>h1{font-size: 50px;}
-	section.sec3>div.wrap>div>p{font-size: 13px; }
+		section.sec3>h1{font-size: 20px;}
+		section.sec3>div.wrap{width:73%;margin:20px auto;}
+		section.sec3>div.wrap>div>p{font-size: 10px; }
+		section.sec3>div.wrap>div>p>span{font-size: 12px;}
+		section.sec3>div:nth-child(4){ padding:0px 0 80px;}
+
+		#typed5{font-size: 10px;}
+
 
 	/*sec4*/
 		section.sec4{height: 576px;}
-		section.sec4>h1{font-size: 50px;}
-		section.sec4>p{font-size: 15px; padding: 10px 0 20px 0;}
-		section.sec4>div{width: 73%; height: 300px;}
-		.sec4Box{width:40%; padding: 40px 40px; font-size: 35px; }
-		section.sec4>div>div:nth-child(2){padding:100px 0 0 45%;}
+		section.sec4>h1{font-size: 20px;}
+		section.sec4>p{font-size: 10px; padding: 10px 0 20px 0;}
+		section.sec4>div{width: 90%; height: 300px;}
+		.sec4Box{width:100%; font-size: 35px; border-bottom: 1px solid #000; }
+		section.sec4>div>div:nth-child(2){padding:50%x 0 0 0;}
 		section.sec4>div>div:nth-child(2)>p{font-size: 13px; }
 		section.sec4>div>div:nth-child(2)>p:nth-child(1){font-size: 15px;}
 		section.sec4>div>div:nth-child(2)>p:nth-child(2){font-size: 13px;padding: 20px 0 20px 0;}
