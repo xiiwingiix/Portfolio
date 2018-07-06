@@ -68,7 +68,7 @@ html{width: 100%; height: 100%; font-family:'NanumGothic';}
 	section.sec2>a>button{width: 68px; height: 68px; outline: none; border-radius: 50%; border:none; background:#ffc63d; }
 	section.sec2>a>p{font-family: 'Do Hyeon'; font-size: 16px; padding-bottom: 260px; padding-top: 20px; }
 	section.sec2>div{width: 100%;}
-	section.sec2>div>img{width: 100%; }
+	section.sec2>div>img{width: 100%; height: 100%;}
 	section.sec2>div>p:nth-child(2){ text-align: center; transform: translateY(-230px);letter-spacing: 20px;}
 	section.sec2>div>p:nth-child(2)>span{font-family: 'Do Hyeon'; font-size: 88px;color: #2d2b2a;}
 	section.sec2>div>p:nth-child(2)>span:nth-child(3n+1){opacity: 0;

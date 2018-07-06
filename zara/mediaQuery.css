@@ -128,7 +128,6 @@
 	header:hover {background-color: rgba(255,255,255,0); z-index: 9999;}
 	header:hover a.logo>img:first-child {display:block;}
 	header:hover a.logo>img:nth-child(2) {display: none;}
-	header:hover a.bag>img:nth-child(2){display: none;}
 	/***섹션1***/
 	section.sec1>ul.main1>li>img{display: none;}
 	section.sec1>ul.main2>li>img{display: block;}
@@ -170,5 +169,5 @@
 	section.sec5>div>ul>li>a:hover{font-size: 1em;}
 	/***푸터***/
 	footer>p{display: none;}
-
 }
+
