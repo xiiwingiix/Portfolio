@@ -3,9 +3,9 @@
 
 /* 메인 스타일 CSS */
 
-/*	
-	font-family: 
-		'NanumGothic' (font-weight : normal, bold) 
+/*
+	font-family:
+		'NanumGothic' (font-weight : normal, bold)
 		'NanumGothicExtraBold';
 */
 /*
@@ -18,10 +18,10 @@ html { width: 100%; height: 100%; font-family:'NanumGothic';}
 h3 { font-size: 24px; text-transform: uppercase;}
 
 /***sec1***/
-	.sec1 { height: 1560px; background: url(img/bg1.jpg) no-repeat;	}
+	.sec1 { height: 1560px; background: url(/Portfolio/images/info/bg1.jpg) no-repeat;	}
 	.wrap { width: 62.5%; height : 100%; /*width:1200px;*/margin: 0 auto; position: relative;}
-	.subtitle { font-size: 25px; padding-top: 78px; } 
-	.subtitle div { text-indent: -9999px; background:#ffc53d; width: 430px; height: 4px; margin: 10px auto;box-shadow: 2px 2px 2px #fefefe;} 
+	.subtitle { font-size: 25px; padding-top: 78px; }
+	.subtitle div { text-indent: -9999px; background:#ffc53d; width: 430px; height: 4px; margin: 10px auto;box-shadow: 2px 2px 2px #fefefe;}
 	.title { font-size: 115px; width: 700px; margin: 0 auto; position: relative;}
 	.title h1{ position:relative; z-index: 9; margin-bottom: 150px; margin-top: 10px;}
 	.title div{	background:#ffc53d; width: 36px; height: 36px; border-radius: 18px; position: absolute;bottom: 0px; right: -20px; z-index: 0; text-indent: -9999px; }
