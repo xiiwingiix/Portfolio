@@ -2,36 +2,36 @@
 
 @font-face {
     font-family: 'NanumGothic';
-    src: url('NanumGothic.eot');
-    src: url('NanumGothic.eot?#iefix') format('embedded-opentype'),
-        url('NanumGothic.woff2') format('woff2'),
-        url('NanumGothic.woff') format('woff'),
-        url('NanumGothic.ttf') format('truetype'),
-        url('NanumGothic.svg#NanumGothic') format('svg');
+    src: url('/Portfolio/css/font/NanumGothic/NanumGothic.eot');
+    src: url('/Portfolio/css/font/NanumGothic/NanumGothic.eot?#iefix') format('embedded-opentype'),
+        url('/Portfolio/css/font/NanumGothic/NanumGothic.woff2') format('woff2'),
+        url('/Portfolio/css/font/NanumGothic/NanumGothic.woff') format('woff'),
+        url('/Portfolio/css/font/NanumGothic/NanumGothic.ttf') format('truetype'),
+        url('/Portfolio/css/font/NanumGothic/NanumGothic.svg#NanumGothic') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'NanumGothic';
-    src: url('NanumGothicBold.eot');
-    src: url('NanumGothicBold.eot?#iefix') format('embedded-opentype'),
-        url('NanumGothicBold.woff2') format('woff2'),
-        url('NanumGothicBold.woff') format('woff'),
-        url('NanumGothicBold.ttf') format('truetype'),
-        url('NanumGothicBold.svg#NanumGothicBold') format('svg');
+    src: url('/Portfolio/css/font/NanumGothic/NanumGothicBold.eot');
+    src: url('/Portfolio/css/font/NanumGothic/NanumGothicBold.eot?#iefix') format('embedded-opentype'),
+        url('/Portfolio/css/font/NanumGothic/NanumGothicBold.woff2') format('woff2'),
+        url('/Portfolio/css/font/NanumGothic/NanumGothicBold.woff') format('woff'),
+        url('/Portfolio/css/font/NanumGothic/NanumGothicBold.ttf') format('truetype'),
+        url('/Portfolio/css/font/NanumGothic/NanumGothicBold.svg#NanumGothicBold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'NanumGothicExtraBold';
-    src: url('NanumGothicExtraBold.eot');
-    src: url('NanumGothicExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('NanumGothicExtraBold.woff2') format('woff2'),
-        url('NanumGothicExtraBold.woff') format('woff'),
-        url('NanumGothicExtraBold.ttf') format('truetype'),
-        url('NanumGothicExtraBold.svg#NanumGothicExtraBold') format('svg');
+    src: url('/Portfolio/css/font/NanumGothic/NanumGothicExtraBold.eot');
+    src: url('/Portfolio/css/font/NanumGothic/NanumGothicExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('/Portfolio/css/font/NanumGothic/NanumGothicExtraBold.woff2') format('woff2'),
+        url('/Portfolio/css/font/NanumGothic/NanumGothicExtraBold.woff') format('woff'),
+        url('/Portfolio/css/font/NanumGothic/NanumGothicExtraBold.ttf') format('truetype'),
+        url('/Portfolio/css/font/NanumGothic/NanumGothicExtraBold.svg#NanumGothicExtraBold') format('svg');
     font-weight: 800;
     font-style: normal;
 }
@@ -39,12 +39,12 @@
 /*도현*/
 @font-face {
     font-family: 'Do Hyeon';
-    src: url('DoHyeon-Regular.eot');
-    src: url('DoHyeon-Regular.eot?#iefix') format('embedded-opentype'),
-        url('DoHyeon-Regular.woff2') format('woff2'),
-        url('DoHyeon-Regular.woff') format('woff'),
-        url('DoHyeon-Regular.ttf') format('truetype'),
-        url('DoHyeon-Regular.svg#DoHyeon-Regular') format('svg');
+    src: url('/Portfolio/css/font/DoHyeon/DoHyeon-Regular.eot');
+    src: url('/Portfolio/css/font/DoHyeon/DoHyeon-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/Portfolio/css/font/DoHyeon/DoHyeon-Regular.woff2') format('woff2'),
+        url('/Portfolio/css/font/DoHyeon/DoHyeon-Regular.woff') format('woff'),
+        url('/Portfolio/css/font/DoHyeon/DoHyeon-Regular.ttf') format('truetype'),
+        url('/Portfolio/css/font/DoHyeon/DoHyeon-Regular.svg#DoHyeon-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -52,72 +52,72 @@
 /*Assistant*/
 @font-face {
     font-family: 'Assistant';
-    src: url('Assistant-ExtraLight.eot');
-    src: url('Assistant-ExtraLight.eot?#iefix') format('embedded-opentype'),
-        url('Assistant-ExtraLight.woff2') format('woff2'),
-        url('Assistant-ExtraLight.woff') format('woff'),
-        url('Assistant-ExtraLight.ttf') format('truetype'),
-        url('Assistant-ExtraLight.svg#Assistant-ExtraLight') format('svg');
+    src: url('/Portfolio/css/font/Assistant/Assistant-ExtraLight.eot');
+    src: url('/Portfolio/css/font/Assistant/Assistant-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('/Portfolio/css/font/Assistant/Assistant-ExtraLight.woff2') format('woff2'),
+        url('/Portfolio/css/font/Assistant/Assistant-ExtraLight.woff') format('woff'),
+        url('/Portfolio/css/font/Assistant/Assistant-ExtraLight.ttf') format('truetype'),
+        url('/Portfolio/css/font/Assistant/Assistant-ExtraLight.svg#Assistant-ExtraLight') format('svg');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Assistant';
-    src: url('Assistant-ExtraBold.eot');
-    src: url('Assistant-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('Assistant-ExtraBold.woff2') format('woff2'),
-        url('Assistant-ExtraBold.woff') format('woff'),
-        url('Assistant-ExtraBold.ttf') format('truetype'),
-        url('Assistant-ExtraBold.svg#Assistant-ExtraBold') format('svg');
+    src: url('/Portfolio/css/font/Assistant/Assistant-ExtraBold.eot');
+    src: url('/Portfolio/css/font/Assistant/Assistant-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('/Portfolio/css/font/Assistant/Assistant-ExtraBold.woff2') format('woff2'),
+        url('/Portfolio/css/font/Assistant/Assistant-ExtraBold.woff') format('woff'),
+        url('/Portfolio/css/font/Assistant/Assistant-ExtraBold.ttf') format('truetype'),
+        url('/Portfolio/css/font/Assistant/Assistant-ExtraBold.svg#Assistant-ExtraBold') format('svg');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Assistant';
-    src: url('Assistant-Bold.eot');
-    src: url('Assistant-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Assistant-Bold.woff2') format('woff2'),
-        url('Assistant-Bold.woff') format('woff'),
-        url('Assistant-Bold.ttf') format('truetype'),
-        url('Assistant-Bold.svg#Assistant-Bold') format('svg');
+    src: url('/Portfolio/css/font/Assistant/Assistant-Bold.eot');
+    src: url('/Portfolio/css/font/Assistant/Assistant-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/Portfolio/css/font/Assistant/Assistant-Bold.woff2') format('woff2'),
+        url('/Portfolio/css/font/Assistant/Assistant-Bold.woff') format('woff'),
+        url('/Portfolio/css/font/Assistant/Assistant-Bold.ttf') format('truetype'),
+        url('/Portfolio/css/font/Assistant/Assistant-Bold.svg#Assistant-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Assistant';
-    src: url('Assistant-Light.eot');
-    src: url('Assistant-Light.eot?#iefix') format('embedded-opentype'),
-        url('Assistant-Light.woff2') format('woff2'),
-        url('Assistant-Light.woff') format('woff'),
-        url('Assistant-Light.ttf') format('truetype'),
-        url('Assistant-Light.svg#Assistant-Light') format('svg');
+    src: url('/Portfolio/css/font/Assistant/Assistant-Light.eot');
+    src: url('/Portfolio/css/font/Assistant/Assistant-Light.eot?#iefix') format('embedded-opentype'),
+        url('/Portfolio/css/font/Assistant/Assistant-Light.woff2') format('woff2'),
+        url('/Portfolio/css/font/Assistant/Assistant-Light.woff') format('woff'),
+        url('/Portfolio/css/font/Assistant/Assistant-Light.ttf') format('truetype'),
+        url('/Portfolio/css/font/Assistant/Assistant-Light.svg#Assistant-Light') format('svg');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Assistant';
-    src: url('Assistant-Regular.eot');
-    src: url('Assistant-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Assistant-Regular.woff2') format('woff2'),
-        url('Assistant-Regular.woff') format('woff'),
-        url('Assistant-Regular.ttf') format('truetype'),
-        url('Assistant-Regular.svg#Assistant-Regular') format('svg');
+    src: url('/Portfolio/css/font/Assistant/Assistant-Regular.eot');
+    src: url('/Portfolio/css/font/Assistant/Assistant-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/Portfolio/css/font/Assistant/Assistant-Regular.woff2') format('woff2'),
+        url('/Portfolio/css/font/Assistant/Assistant-Regular.woff') format('woff'),
+        url('/Portfolio/css/font/Assistant/Assistant-Regular.ttf') format('truetype'),
+        url('/Portfolio/css/font/Assistant/Assistant-Regular.svg#Assistant-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Assistant';
-    src: url('Assistant-SemiBold.eot');
-    src: url('Assistant-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('Assistant-SemiBold.woff2') format('woff2'),
-        url('Assistant-SemiBold.woff') format('woff'),
-        url('Assistant-SemiBold.ttf') format('truetype'),
-        url('Assistant-SemiBold.svg#Assistant-SemiBold') format('svg');
+    src: url('/Portfolio/css/font/Assistant/Assistant-SemiBold.eot');
+    src: url('/Portfolio/css/font/Assistant/Assistant-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/Portfolio/css/font/Assistant/Assistant-SemiBold.woff2') format('woff2'),
+        url('/Portfolio/css/font/Assistant/Assistant-SemiBold.woff') format('woff'),
+        url('/Portfolio/css/font/Assistant/Assistant-SemiBold.ttf') format('truetype'),
+        url('/Portfolio/css/font/Assistant/Assistant-SemiBold.svg#Assistant-SemiBold') format('svg');
     font-weight: 600;
     font-style: normal;
 }
