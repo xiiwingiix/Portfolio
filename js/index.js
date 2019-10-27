@@ -1,44 +1,57 @@
 var work_array = [{
 	tit : 'BOBBY_J',
 	des : 'Publishig by Nahye (30%)',
-	img : '/Portfolio/images/Baby_J/Baby_j.jpg',
-	url : '/Portfolio/googims/info/infoPage.html'
+	img : '/images/Bobby_J/Baby_j.jpg',
+	alt : 'Baby_J young women cloth shopping mall',
+	url : '/googims/info/infoPage.html'
 },{
 	tit : 'GOOGIMS COMPANY',
 	des : 'Publishig by Nahye / design by Seoyong',
-	img : '/Portfolio/images/googims/googims.jpg',
-	url : '/Portfolio/googims/info/infoPage.html'
+	img : '/images/googims/googims.jpg',
+	alt : 'googims young casual cloth shopping mall',
+	url : '/googims/info/infoPage.html'
 },{
 	tit : 'KUKKA',
 	des : 'Shopping Mall/ design & develop',
-	img : '/Portfolio/images/kukka/kukka.jpg',
-	url : '/Portfolio/kukka/info/infoPage.html'
+	img : '/images/kukka/kukka.jpg',
+	alt : 'kukka flower shopping mall',
+	url : '/kukka/info/infoPage.html'
 },{
 	tit : 'JARA',
 	des : 'web site renewal/ responsive web',
-	img : '/Portfolio/images/zara/zara.jpg',
-	url : '/Portfolio/zara/info/infoPage.html'
+	img : '/images/zara/zara.jpg',
+	alt : 'jara Web Site',
+	url : '/html/zara/intro.html'
 },{
 	tit : 'Jeju travel',
 	des : 'promotion page / Design & develop',
-	img : '/Portfolio/images/promotion/promotion2.jpg',
-	url : '/Portfolio/jejuPromotion/info/infoPage.html'
+	img : '/images/promotion/promotion2.jpg',
+	alt : '프로모션',
+	url : '/html/jejuPromotion/intro.html'
 },{
 	tit : 'ALZI_GPS alarm app.',
 	des : 'App design & prototype/ UI/UX',
-	img : '/Portfolio/images/ALZI/alzi.jpg',
-	url : '/Portfolio/ALZI/index.html'
+	img : '/images/ALZI/alzi.jpg',
+	alt : 'UI/UX',
+	url : '/html/ALZI/intro.html'
 },{
 	tit : 'NHSung | portfolio',
 	des : 'portfolio page / design & develop',
-	img : '/Portfolio/images/main/portfolio.jpg',
-	url : '/Portfolio/html/info/infoPage.html'
+	img : '/images/main/portfolio.jpg',
+	alt : 'Portfolio',
+	url : '/html/info/infoPage.html'
 }];
 
 $(document).ready(function(){
 	//sec3 타이핑 js
 	var typed5 = new Typed('#typed5', {
-		strings: ['원하는 디자인에 맞춰 웹사이트를 제작할 수 있습니다.', '웹표준(HTML5 / CSS3 / jQuery)에 맞춰 퍼블리싱할 수 있습니다.', '반응형 웹사이트를 제작할 수 있습니다.','모바일 웹을 제작할 수 있습니다.','디자인 관련 툴(Ps / Ai)을 사용할 수 있습니다.'],
+		strings: [
+			'원하는 디자인에 맞춰 웹사이트를 제작할 수 있습니다.', 
+			'웹표준(HTML5 / CSS3 / jQuery)에 맞춰 퍼블리싱할 수 있습니다.', 
+			'반응형 웹사이트를 제작할 수 있습니다.',
+			'모바일 웹을 제작할 수 있습니다.',
+			'디자인 관련 툴(Ps / Ai)을 사용할 수 있습니다.'
+		],
 		typeSpeed: 100,
 		backSpeed: 20,
 		cursorChar: '_',
@@ -47,6 +60,23 @@ $(document).ready(function(){
 		loop: true
 	});
 	   
+	//work list 
+	var ele = '';
+	for(var i = 0; i < work_array.length; i++){
+		ele +=`
+			<a href="${work_array[i].url}" target="_blank">
+				<img src="${work_array[i].img}" alt="${work_array[i].alt}">
+				<dl>
+					<dt>Title</dt>
+					<dl>${work_array[i].tit}</dl>
+					<dt>Description</dt>
+					<dl>${work_array[i].des}</dl>
+				</dl>
+			</a>
+		`
+	}
+
+	$('.work_list').append(ele);
 
 	return false;
 });

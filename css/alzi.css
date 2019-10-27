@@ -20,7 +20,7 @@ html { width: 100%; height: 100%; font-family:'NanumGothic';}
 h3 { font-size: 24px; text-transform: uppercase;}
 
 /***sec1***/
-	.sec1 { height: 1550px; background: url(img/bg1.jpg) no-repeat;	}
+	.sec1 { height: 1550px; background: url(/images/ALZI/bg1.jpg) no-repeat;	}
 	.wrap { width: 62.5%; height : 100%; /*width:1200px;*/margin: 0 auto; position: relative;}
 	.subtitle { font-size: 25px; padding-top: 78px; } 
 	.subtitle div { text-indent: -9999px; background:#f7bb43; width: 290px; height: 4px; margin: 0 auto;} 
@@ -63,7 +63,7 @@ h3 { font-size: 24px; text-transform: uppercase;}
 	div.app>h2{margin-bottom: 50px;}
 
 /***sec3***/
-	.sec3 {width: 100%; height: 4660px; background: url(img/bg2.jpg);}
+	.sec3 {width: 100%; height: 4660px; background: url(/images/ALZI/bg2.jpg);}
 	.main {display: block; padding: 230px 0 320px 0; width: 26.8229%; margin: 0 auto;}
 	.sec3Wrap{width: 62.5%; margin: 0 auto;}
 	.sec3Wrap>div{float: left; width: 50%;height: 676px; position: relative;}
@@ -85,9 +85,27 @@ h3 { font-size: 24px; text-transform: uppercase;}
 
 
 /***sec4***/
-	.sec4{width: 100%; height: 1120px; background: url(img/bg3.jpg);}
+	.sec4{width: 100%; height: 1120px; background: url(/images/ALZI/bg3.jpg);}
 	.sec4 h3 {color: #f7bb43; padding: 180px 0 50px 0;}
 	.dot { width: 8px; height: 8px; background: #f7bb43; border-radius: 4px; margin: 10px auto; }
 	.sec4>div:nth-child(1) {margin-bottom: 380px;}
 	h4{font-size: 74px; color: #fff; text-shadow: 2px 2px 2px #959394;padding-bottom: 55px;}
 	.sec4 p{color:#fff; font-size: 24px; font-weight: bold;}
+
+
+	
+@media screen and (min-width: 1656px) and (max-width: 1792px) {
+	/*sec1*/
+
+}
+@media screen and (min-width: 1400px) and (max-width: 1656px) {
+/***sec1***/
+	.overview h3 { transform: translateX(-50px);}
+	.overview p { font-size: 15px; }
+/***sec2***/
+	.txt div p:nth-child(1) {font-size: 50px; margin-bottom: 80px;}
+	.txt div p:nth-child(1) span{font-size: 30px; }
+/***sec4***/
+	.sec4 h3 {color: #f7bb43; padding: 100px 0 50px 0;}
+
+}
