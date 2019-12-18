@@ -1,4 +1,10 @@
 var work_array = [{
+	tit : 'CARD_GAME',
+	des : 'Publishig by Nahye (100%)',
+	img : '/images/Bobby_J/Baby_j.jpg',
+	alt : '[practice]card_game',
+	url : '/html/card_game.html'
+},{
 	tit : 'BOBBY_J',
 	des : 'Publishig by Nahye (30%)',
 	img : '/images/Bobby_J/Baby_j.jpg',
@@ -33,7 +39,7 @@ var work_array = [{
 	des : 'App design & prototype/ UI/UX',
 	img : '/images/ALZI/alzi.jpg',
 	alt : 'UI/UX',
-	url : '/html/ALZI/intro.html'
+	url : '/html/ALZI_intro.html'
 },{
 	tit : 'NHSung | portfolio',
 	des : 'portfolio page / design & develop',
