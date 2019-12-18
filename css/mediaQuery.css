@@ -176,8 +176,10 @@
 @media screen and (min-width: 600px) and (max-width: 800px){
 	/* 헤더 */
  		header>ul{bottom: 40px; right:0%;}
- 		header>ul>li{display: none;}
-		header>ul>li:last-child{display: block; font-size: 25px;}
+		 header>ul#gnb{display: none;}
+		header>ul#gnb_m_button {display: block; font-size: 25px;}
+		header>ul#gnb_m_button > li {display: none; }
+		header>ul#gnb_m_button > li.menu{display: block; }
 
 
 	/*sec1*/

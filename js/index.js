@@ -81,6 +81,10 @@ $(document).ready(function(){
 	return false;
 });
 
+$(document).on('click','.btn_menu', function(){
+	$('#gnb').show();
+});
+
 //nav 클릭 시, 스크롤 속도 조절
 $('#gnb a').click(function(){
 	var target = $(this).attr('href');
@@ -91,9 +95,6 @@ $('#gnb a').click(function(){
 
 	return false;
 });
-
-
-
 
 //스크롤 시 nav 색상 변경
 $(window).scroll(function() {
