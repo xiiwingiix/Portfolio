@@ -1,7 +1,7 @@
 var work_array = [{
 	tit : 'CARD_GAME',
 	des : 'Publishig by Nahye (100%)',
-	img : '/images/Bobby_J/Baby_j.jpg',
+	img : '/images/card_game/card_thumnail.jpg',
 	alt : '[practice]card_game',
 	url : '/html/card_game.html'
 },{
