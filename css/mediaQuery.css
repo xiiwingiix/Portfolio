@@ -176,8 +176,10 @@
 @media screen and (min-width: 600px) and (max-width: 800px){
 	/* 헤더 */
  		header>ul{bottom: 40px; right:0%;}
- 		header>ul>li{display: none;}
-		header>ul>li:last-child{display: block; font-size: 25px;}
+		 header>ul#gnb{display: none;}
+		header>ul#gnb_m_button {display: block; font-size: 25px;}
+		header>ul#gnb_m_button > li {display: none; }
+		header>ul#gnb_m_button > li.menu{display: block; }
 
 
 	/*sec1*/
@@ -209,7 +211,7 @@
 		section.sec2>article>a>dl>dt{font-size: 12px;padding: 10px 0; display: none;}
 		section.sec2>article>a>dl>dl{font-size: 12px;padding-bottom: 0px ; text-indent: 10px; color: #efefef;}
 		section.sec2>article>a>dl>dl:nth-child(5){display: none;}
-	section.sec2>a>p{padding-bottom: 150px; }
+	  section.sec2>a>p{padding-bottom: 150px; }
 
 		section.sec2>div>p:nth-child(2){transform: translateY(-100px);letter-spacing: 10px;}
 		section.sec2>div>p:nth-child(2)>span{font-size:40px;}
