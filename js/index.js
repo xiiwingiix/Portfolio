@@ -21,7 +21,7 @@ var work_array = [{
 	des : 'Shopping Mall/ design & develop',
 	img : '/images/kukka/kukka.jpg',
 	alt : 'kukka flower shopping mall',
-	url : '/kukka/info/infoPage.html'
+	url : '/html/kukka_intro.html'
 },{
 	tit : 'JARA',
 	des : 'web site renewal/ responsive web',
