@@ -1,6 +1,12 @@
 var work_array = [{
-	tit : 'CARD_GAME',
+	tit : 'Canvas',
 	des : 'Publishig by Nahye (100%)',
+	img : '/images/card_game/card_thumnail.jpg',
+	alt : '[practice]canvas',
+	url : '/html/canvas.html'
+},{
+	tit : 'CARD_GAME',
+	des : 'Publishig & develop by Nahye (100%)',
 	img : '/images/card_game/card_thumnail.jpg',
 	alt : '[practice]card_game',
 	url : '/html/card_game.html'
