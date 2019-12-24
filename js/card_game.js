@@ -1,6 +1,6 @@
-var card 		  =	{},
-    tmp 			= [],
-    timeStart = 0,
+var card 		= {},
+    tmp 		= [],
+    timeStart   = 0,
     timeEnd 	= 0,
     timeGap 	= 0,
     clickCnt 	= 0
@@ -27,117 +27,119 @@ var card_img_array = [{
 ;
 
 card = {
-parent : new Object(), //객체 생성
-info : new Object(), //객체 생성
-level: '', //카드 갯수
-delay : 1000,
+    parent : new Object(), //객체 생성
+    info : new Object(), //객체 생성
+    level: '', //카드 갯수
+    delay : 1000,
 
-create : function(){ //카드 생성 함수
+    create : function(){ //카드 생성 함수
 
-    var cardNum = 0, //총 카드 갯수
-        flip_card = '', //플립카드 생성
-        cardArray = new Array()
-    ;
+        var cardNum = 0, //총 카드 갯수
+            flip_card = '', //플립카드 생성
+            cardArray = new Array()
+        ;
 
-    //카드 초기화
-    $('.card_list').html('');
-    $('.time').text('');
+        //카드 초기화
+        $('.card_list').html('');
+        $('.time').text('');
 
-    this.level = Number($('.level').val()); //카드 수
+        this.level = Number($('.level').val()); //카드 수
 
-    cardNum = this.level/2;//2 : 캐릭터 수
+        cardNum = this.level/2;//2 : 캐릭터 수
 
-    //캐릭터 램덤하게 뽑기, 카드 수 채우기
-    for(var i = 0; i < cardNum; i++){
-        cardArray[i]  = card_img_array[Math.floor(Math.random() * card_img_array.length)];
-        cardArray[i+cardNum] = cardArray[i] ;
-        for(var j = 0; j < i ; j++){ //중복 값 제거
-            if(cardArray[i] == cardArray[j]){
-                i--;
-                break;
+        //캐릭터 램덤하게 뽑기, 카드 수 채우기
+        for(var i = 0; i < cardNum; i++){
+            cardArray[i] = card_img_array[Math.floor(Math.random() * card_img_array.length)];
+            cardArray[i+cardNum] = cardArray[i] ;
+            for(var j = 0; j < i ; j++){ //중복 값 제거
+                if(cardArray[i] == cardArray[j]){
+                    i--;
+                    break;
+                }
             }
+
         }
-    }
+        console.log(cardArray);
 
-    //카드 램덤하게 배열하기
-    cardArray.sort(function() {
-        return Math.random() - .5;
-    });
+        //카드 램덤하게 배열하기
+        cardArray.sort(function() {
+            return Math.random() - .5;
+        });
 
-    //카드 생성
-    for(var i = 0; i < this.level; i++){
-        flip_card += 
-        `
-          <li class="flip_wrap">
-            <div class="flip_card one">
-              <div class="front" style="background-color: #000;"></div>
-              <div class="back" chr_name = "${cardArray[i].chr_name}" style="background-image : url(${cardArray[i].url})"></div>
-            </div>';
-          </li>
-        `
-    }
-    
-    //카드 삽입
-    $('.card_list').append(flip_card); 
-
-    //시간 측정 시작
-    timeStart = new Date()/1000;
-    card.parent.find('.flip_wrap').bind("click",card.click);
-
-},
-click : function(){
-    var clicked_card 	= $(this).find('.back').attr('chr_name');
-    var card_num 			= $(this).index();
-    clickCnt ++ ; //클릭 수 증가
-
-    $(this).css('transform','rotateY(180deg)'); //클릭 시 카드 회전
-    setTimeout(function(){
-
-        if(!tmp.length){
-
-            tmp.push(clicked_card);
-
-        }else if(tmp[0] == clicked_card){
-            card.parent.find('.back[chr_name=' + clicked_card + ']').closest('.flip_wrap').remove();
-            if ($('.flip_wrap').length == 0){
-                card.end();
-                $('.msg').show();
-                $('.time').html('걸린시간 : '+ timeGap).show();
-                $('.clck_cnt').html('클릭수 : '+ clickCnt).show();
-            };
-            tmp = [];
-        }else{
-            card.parent.find('.flip_wrap').css('transform','rotateY(0deg)');
-            tmp = [];
+        //카드 생성
+        for(var i = 0; i < this.level; i++){
+            flip_card += 
+            `
+            <a href="#" class="flip_wrap">
+                <div class="flip_card one">
+                <div class="front" style="background-color: #000;"></div>
+                <div class="back" chr_name = "${cardArray[i].chr_name}" style="background-image : url(${cardArray[i].url})"></div>
+                </div>';
+            </a>
+            `
         }
-    },500);
+        
+        //카드 삽입
+        $('.card_list').append(flip_card); 
 
-    return false;
+        //시간 측정 시작
+        timeStart = new Date()/1000;
+        card.parent.find('.flip_wrap').bind("click",card.click);
 
-},
-end : function(){
-    timeEnd = new Date()/1000;
-    timeGap = Math.floor((timeEnd - timeStart)  / 60) + '분'+ Math.floor((timeEnd - timeStart) % 60 ) + '초';
+    },
+    click : function(){
+        var clicked_card = $(this).find('.back').attr('chr_name');
+        var card_num     = $(this).index();
+        clickCnt ++ ; //클릭 수 증가
 
-},
-fail : function(){
+        $(this).css('transform','rotateY(180deg)'); //클릭 시 카드 회전
+        setTimeout(function(){
 
-    //수행 시간 측정
-    card.end();
-    $('.time').html('수행 시간 : '+ timeGap).show();
+            if(!tmp.length){
 
-    return false;
+                tmp.push(clicked_card);
 
-},
-//세팅
-init : function(){ 
-    this.parent = $('.card_list');
-    this.info = $('.card_info');
-    this.level = $('.level').val();
-    this.create();
+            }else if(tmp[0] == clicked_card){
+                card.parent.find('.back[chr_name=' + clicked_card + ']').closest('.flip_wrap').remove();
+                if ($('.flip_wrap').length == 0){
+                    card.end();
+                    $('.msg').show();
+                    $('.time').html('걸린시간 : '+ timeGap).show();
+                    $('.clck_cnt').html('클릭수 : '+ clickCnt).show();
+                };
+                tmp = [];
+            }else{
+                card.parent.find('.flip_wrap').css('transform','rotateY(0deg)');
+                tmp = [];
+            }
+        },500);
 
-    $('.msg, .clck_cnt, .time').hide();
-},
+        return false;
+
+    },
+    end : function(){
+        timeEnd = new Date()/1000;
+        timeGap = Math.floor((timeEnd - timeStart)  / 60) + '분'+ Math.floor((timeEnd - timeStart) % 60 ) + '초';
+
+    },
+    fail : function(){
+
+        //수행 시간 측정
+        card.end();
+        $('.time').html('수행 시간 : '+ timeGap).show();
+
+        return false;
+
+    },
+    //세팅
+    init : function(){ 
+        this.parent = $('.card_list');
+        this.info = $('.card_info');
+        this.level = $('.level').val();
+        this.create();
+
+        $('.msg, .clck_cnt, .time').hide();
+    },
 }
 
 
