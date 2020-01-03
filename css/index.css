@@ -1,5 +1,6 @@
 @charset "utf-8";
-/* Coded by NHSung */
+@import url('/css/reset.css') screen;
+@import url('/css/font.css') screen;
 
 /* 메인 스타일 CSS */
 /*
@@ -31,10 +32,7 @@ header > ul#gnb_m_button {display:none}
 /* 섹션1 */
 section.sec1 {width: 100%; height: 1000px;position: relative; overflow: hidden;}
 section.sec1 > p:first-child {width: 340px; height: 33px; transform: rotate(90deg); transform-origin:0; padding: 0; margin: 0;position: absolute;top:343px; left:4%; color: #2d2b2a;}
-
 section.sec1 > img:nth-child(2) {height: 53.5%; position: relative; animation-name : ani_n; animation-duration: 3.7s;  animation-timing-function:ease-in-out; animation-iteration-count:1; animation-fill-mode:forwards;top: -560px; left:620px;z-index: 99;}
-
-
 section.sec1 > img:nth-child(3) {height: 53.6%; position:relative; animation-name : ani_h; animation-duration: 2.9s; animation-timing-function: ease-in-out; animation-iteration-count:1; animation-fill-mode:forwards;   top: -560px; left: 250px;}
 section.sec1 > div.rightLine {width: 1px; height: 330px; background: #000;position: absolute;top:343px; right:4%; text-indent: -9999px;}
 
@@ -51,15 +49,15 @@ section.sec1 > div.rightLine {width: 1px; height: 330px; background: #000;positi
 
 /* 섹션2*/
 section.sec2{width: 100%; position: relative; }
-section.sec2>span{font-size: 68px;font-family: 'Do Hyeon'; position: absolute; height: 45px;}
-section.sec2>span:nth-child(1){top: 170px;left: 270px; transition: .2s}
-section.sec2>span:nth-child(2){top: 170px;left: 312px; transition: .2s}
-section.sec2>span:nth-child(3){top: 170px;left: 351px; transition: .2s}
-section.sec2>span:nth-child(4){top: 170px;left: 392px; transition: .2s}
-section.sec2>span:nth-child(5){top: 170px;left: 452px; color:#ffc63d; transition: .2s}
-section.sec2>span:nth-child(6){top: 170px;left: 512px; transition: .2s}
-section.sec2>span:nth-child(7){top: 170px;left: 549px; transition: .2s}
-section.sec2>span:nth-child(8){top: 170px;left: 590px; transition: .2s}
+section.sec2 > span{font-size: 68px;font-family: 'Do Hyeon'; position: absolute; height: 45px; top: 170px; transition: .2s}
+section.sec2 > span:nth-child(1){left: 270px; }
+section.sec2 > span:nth-child(2){left: 312px; }
+section.sec2 > span:nth-child(3){left: 351px; }
+section.sec2 > span:nth-child(4){left: 392px; }
+section.sec2 > span:nth-child(5){top: 170px;left: 452px; color:#ffc63d;}
+section.sec2 > span:nth-child(6){top: 170px;left: 512px; }
+section.sec2 > span:nth-child(7){top: 170px;left: 549px; }
+section.sec2>span:nth-child(8){top: 170px;left: 590px; }
 section.sec2>article{width: 100%; overflow: hidden; padding-top: 260px;}
 section.sec2>article>a{width:25%; float: left; cursor: pointer; padding: 0; position: relative;}
 section.sec2>article>a>img{width:100%; vertical-align: top;}

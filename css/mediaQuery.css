@@ -211,7 +211,7 @@
 		section.sec2>article>a>dl>dt{font-size: 12px;padding: 10px 0; display: none;}
 		section.sec2>article>a>dl>dl{font-size: 12px;padding-bottom: 0px ; text-indent: 10px; color: #efefef;}
 		section.sec2>article>a>dl>dl:nth-child(5){display: none;}
-	section.sec2>a>p{padding-bottom: 150px; }
+	  section.sec2>a>p{padding-bottom: 150px; }
 
 		section.sec2>div>p:nth-child(2){transform: translateY(-100px);letter-spacing: 10px;}
 		section.sec2>div>p:nth-child(2)>span{font-size:40px;}

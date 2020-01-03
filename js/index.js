@@ -1,7 +1,13 @@
 var work_array = [{
-	tit : 'CARD_GAME',
+	tit : 'Canvas',
 	des : 'Publishig by Nahye (100%)',
-	img : '/images/Bobby_J/Baby_j.jpg',
+	img : '/images/card_game/card_thumnail.jpg',
+	alt : '[practice]canvas',
+	url : '/html/canvas.html'
+},{
+	tit : 'CARD_GAME',
+	des : 'Publishig & develop by Nahye (100%)',
+	img : '/images/card_game/card_thumnail.jpg',
 	alt : '[practice]card_game',
 	url : '/html/card_game.html'
 },{
@@ -21,19 +27,19 @@ var work_array = [{
 	des : 'Shopping Mall/ design & develop',
 	img : '/images/kukka/kukka.jpg',
 	alt : 'kukka flower shopping mall',
-	url : '/kukka/info/infoPage.html'
+	url : '/html/kukka_intro.html'
 },{
 	tit : 'JARA',
 	des : 'web site renewal/ responsive web',
 	img : '/images/zara/zara.jpg',
 	alt : 'jara Web Site',
-	url : '/html/zara/intro.html'
+	url : '/html/zara_intro.html'
 },{
 	tit : 'Jeju travel',
 	des : 'promotion page / Design & develop',
 	img : '/images/promotion/promotion2.jpg',
 	alt : '프로모션',
-	url : '/html/jejuPromotion/intro.html'
+	url : '/html/promotion_intro.html'
 },{
 	tit : 'ALZI_GPS alarm app.',
 	des : 'App design & prototype/ UI/UX',
@@ -45,7 +51,7 @@ var work_array = [{
 	des : 'portfolio page / design & develop',
 	img : '/images/main/portfolio.jpg',
 	alt : 'Portfolio',
-	url : '/html/info/infoPage.html'
+	url : '/html/portfolio_intro.html'
 }];
 
 $(document).ready(function(){
@@ -88,7 +94,9 @@ $(document).ready(function(){
 });
 
 $(document).on('click','.btn_menu', function(){
-	$('#gnb').show();
+  $('#gnb').show();
+  
+  return false;
 });
 
 //nav 클릭 시, 스크롤 속도 조절
@@ -109,17 +117,17 @@ $(window).scroll(function() {
 	$("#gnb a").removeClass("scrolling");
 
     if (scroll <= 800) {
-        $("#gnb a").removeClass("fWhite")
-        $("#gnb li:nth-child(1) a").addClass("scrolling");
+      $("#gnb a").removeClass("fWhite")
+      $("#gnb li:nth-child(1) a").addClass("scrolling");
     } else if (scroll <= 1800) {
-        $("#gnb a").removeClass("fWhite")
-        $("#gnb li:nth-child(2) a").addClass("scrolling");
+      $("#gnb a").removeClass("fWhite")
+      $("#gnb li:nth-child(2) a").addClass("scrolling");
     } else if (scroll <= 3740) {
-        $("#gnb a").removeClass("fWhite")
-        $("#gnb li:nth-child(3) a").addClass("scrolling");
+      $("#gnb a").removeClass("fWhite")
+      $("#gnb li:nth-child(3) a").addClass("scrolling");
     } else {
-        $("#gnb a").addClass("fWhite");
-        $("#gnb li:nth-child(4) a").addClass("scrolling");
+      $("#gnb a").addClass("fWhite");
+      $("#gnb li:nth-child(4) a").addClass("scrolling");
     }
 
 	return false;

@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+body {
+    background-color:#f2f2f2;
+}
+
+.cardgame_wrap {
+    width:100%; 
+    max-width: 1000px;
+    margin:0 auto;
+    background-color:#fff;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+.level {
+    height:24px;
+    line-height: 24px;
+}
+button {
+    background-color:#4CAF50;;
+    color:#fff;
+    border-radius: 3px;
+    box-shadow: none;
+    border: none;
+    height:24px;
+    line-height: 24px;
+    padding: 0 15px;
+}
+button:hover {
+    background-color: #3e8e41;
+  }
+.card_list {
+    padding:0;
+    overflow: hidden;
+}
+.card_list a{
+    list-style: none; 
+    width: calc(25% - 16px); 
+    max-width: 200px; 
+    margin-left: 10px; 
+    height: auto;
+    padding-bottom: 25%;
+    border: 3px solid #eee; 
+    float: left;
+}
+
+.front, .back{ 
+    position: absolute; 
+    backface-visibility:hidden; 
+    width: 100%; 
+    padding-bottom: 150%;
+    background-size: cover;
+}
+
+.front{
+    z-index:2; 
+    transform: rotateY(0deg);
+}
+.back {
+    transform: rotateY(180deg);
+}
+.flip_wrap { 
+    transition: 0.6s; 
+    transform-style: preserve-3d; 
+    position: relative; 
+    cursor: pointer;
+}
+
+.msg, .clck_cnt, .time{
+    display: none;
+}
