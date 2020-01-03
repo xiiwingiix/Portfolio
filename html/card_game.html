@@ -5,11 +5,11 @@
         <meta charset="utf-8">
         <title>카드 뒤집기</title>
         <style>
-            li{list-style: none; width: 50px; height: 100px; margin-left: 10px; border: 3px solid #eee; float: left;}
+            li{list-style: none; width: 100px; height: 200px; margin-left: 10px; border: 3px solid #eee; float: left;}
             .front{z-index:2; transform: rotateY(0deg);}
             .back {transform: rotateY(180deg);}
             .flip_wrap { transition: 0.6s; transform-style: preserve-3d; position: relative; cursor: pointer;}
-            .front, .back{ position: absolute; backface-visibility:hidden; width: 50px; height: 100px; background-size: cover;}
+            .front, .back{ position: absolute; backface-visibility:hidden; width: 100px; height: 200px; background-size: cover;}
             .msg, .clck_cnt, .time{display: none;}
         </style>
     </head>
@@ -35,9 +35,9 @@
 
 	    <script type="text/javascript">
 
-            var card 		=	{},
-                tmp 			= [],
-                timeStart = 0,
+            var card 		= {},
+                tmp 		= [],
+                timeStart   = 0,
                 timeEnd 	= 0,
                 timeGap 	= 0,
                 clickCnt 	= 0
