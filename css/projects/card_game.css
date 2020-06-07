@@ -33,6 +33,9 @@ button:hover {
     padding:0;
     overflow: hidden;
 }
+.card_list .flip_card {
+    overflow: hidden;
+}
 .card_list a{
     list-style: none; 
     width: calc(25% - 16px); 
@@ -42,14 +45,16 @@ button:hover {
     padding-bottom: 25%;
     border: 3px solid #eee; 
     float: left;
+    display: block;
 }
 
 .front, .back{ 
     position: absolute; 
     backface-visibility:hidden; 
     width: 100%; 
-    padding-bottom: 150%;
+    height: 100%;
     background-size: cover;
+    background-position: center;
 }
 
 .front{

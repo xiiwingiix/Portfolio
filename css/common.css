@@ -9,7 +9,6 @@ font-family: 'Amatic SC', cursive;
 */
 
 body {font-family: 'Roboto', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #555;line-height: 1.6;}
-
 a{color: #555;}
 
 /****레이아웃****/
@@ -22,17 +21,11 @@ nav{background:#212121; width:85% ; height:35px; margin-left: 15%; position: rel
 /* header 컨텐츠*/
 header > h1{background:url(../images/logo1.png) no-repeat; width:180px; height: 136px; text-indent:-999%; position: absolute;top:70px; left:50%; transform:translateX(-50%);/*position을 이용한 중앙 정렬 : left:50% 지정 후 transform:translateX(-50%)으로 가로 값을 제어해준다. ;*/background-size: contain;/*h1의 크기에 맞춰 배경 이미지가 자동 조절*/}
 
-ul#gnb{/*종속 선택자*/
-	position: absolute; top: 310px; right:100px;}
-
+ul#gnb{position: absolute; top: 310px; right:100px;}
 ul#gnb a{display: block; font-size: 18px;text-transform: uppercase;font-family: 'Amatic SC', cursive; text-decoration: none; letter-spacing: 1px; line-height: 2;}
-
 ul#gnb a:hover{color: tomato;}
-
 ul#gnb a i{margin-right: 8px;}
-
 ul.sns {width:90px; height: 47px; position: absolute; bottom:44px; right: 50%; transform:translateX(50%);}
-
 ul.sns li{float: left;}
 
 /*nav 컨텐츠*/

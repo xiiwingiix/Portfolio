@@ -1,57 +1,51 @@
 var work_array = [{
-	tit : 'Canvas',
-	des : 'Publishig by Nahye (100%)',
-	img : '/images/card_game/card_thumnail.jpg',
-	alt : '[practice]canvas',
-	url : '/html/canvas.html'
-},{
 	tit : 'CARD_GAME',
 	des : 'Publishig & develop by Nahye (100%)',
-	img : '/images/card_game/card_thumnail.jpg',
+	img : './images/card_game/card_thumnail.jpg',
 	alt : '[practice]card_game',
-	url : '/html/card_game.html'
+	url : './html/projects/card_game.html'
 },{
 	tit : 'BOBBY_J',
 	des : 'Publishig by Nahye (30%)',
-	img : '/images/Bobby_J/Baby_j.jpg',
+	img : './images/Bobby_J/Baby_j.jpg',
 	alt : 'Baby_J young women cloth shopping mall',
-	url : '/googims/info/infoPage.html'
+	url : './googims/info/infoPage.html'
 },{
 	tit : 'GOOGIMS COMPANY',
 	des : 'Publishig by Nahye / design by Seoyong',
-	img : '/images/googims/googims.jpg',
+	img : './images/googims/googims.jpg',
 	alt : 'googims young casual cloth shopping mall',
-	url : '/googims/info/infoPage.html'
+	url : './googims/info/infoPage.html'
 },{
 	tit : 'KUKKA',
 	des : 'Shopping Mall/ design & develop',
-	img : '/images/kukka/kukka.jpg',
+	img : './images/kukka/kukka.jpg',
 	alt : 'kukka flower shopping mall',
-	url : '/html/kukka_intro.html'
+	url : './html/projects/publishing_kukka/info.html'
 },{
 	tit : 'JARA',
 	des : 'web site renewal/ responsive web',
-	img : '/images/zara/zara.jpg',
+	img : './images/zara/zara.jpg',
 	alt : 'jara Web Site',
-	url : '/html/zara_intro.html'
+	url : './html/projects/publishing_zara/intro.html'
 },{
 	tit : 'Jeju travel',
 	des : 'promotion page / Design & develop',
-	img : '/images/promotion/promotion2.jpg',
+	img : './images/promotion/promotion2.jpg',
 	alt : '프로모션',
-	url : '/html/promotion_intro.html'
+	url : './html/projects/web_design/intro.html'
 },{
 	tit : 'ALZI_GPS alarm app.',
 	des : 'App design & prototype/ UI/UX',
-	img : '/images/ALZI/alzi.jpg',
+	img : './images/ALZI/alzi.jpg',
 	alt : 'UI/UX',
-	url : '/html/ALZI_intro.html'
+	url : './html/projects/sketch_app/ALZI_intro.html'
 },{
 	tit : 'NHSung | portfolio',
 	des : 'portfolio page / design & develop',
-	img : '/images/main/portfolio.jpg',
+	img : './images/main/portfolio.jpg',
 	alt : 'Portfolio',
-	url : '/html/portfolio_intro.html'
+	url : './html/portfolio_intro.html'
 }];
 
 $(document).ready(function(){
