@@ -18,7 +18,7 @@ html { width: 100%; height: 100%; font-family:'NanumGothic';}
 h3 { font-size: 24px; text-transform: uppercase;}
 
 /***sec1***/
-.sec1 { height: 1560px; background: url(/images/info/bg1.jpg) no-repeat;	}
+.sec1 { height: 1560px; background-image: url(../../images/info/bg1.jpg); background-repeat:  no-repeat; background-size:  cover;	}
 .wrap { width: 62.5%; height : 100%; /*width:1200px;*/margin: 0 auto; position: relative;}
 .subtitle { font-size: 25px; padding-top: 78px; }
 .subtitle div { text-indent: -9999px; background:#ffc53d; width: 430px; height: 4px; margin: 10px auto;box-shadow: 2px 2px 2px #fefefe;}
