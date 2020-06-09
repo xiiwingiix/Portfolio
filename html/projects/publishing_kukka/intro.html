@@ -14,67 +14,51 @@
 
 <!--헤더-->
 	<header >
-		<div class="login">
+		<div class="top">
 			<div class="wrap">
-				<p>Live everyday with beautiful flowers</p>
-				<ul>
+				<p class="txt">Live everyday with beautiful flowers</p>
+				<ul class="mypage_list">
 					<li><a href="#">로그인</a></li>
 					<li><a href="#">회원가입</a></li>
 					<li><a href="#">장바구니</a></li>
 				</ul>
 			</div>
 		</div>
-		<div class="nav">
+		<div class="logo wrap">
 			<a href="./intro.html"><img src="../../../images/kukka/logo.png" alt="logo"></a>
-			<ul>
-				<li><a href="#">꽃 정기구독</a></li>
-				<li><a href="./list.html">플랜트 정기구독
-				<!--알림-->
-					<div id="noty">	i) 메뉴에 플랜트정기구독 클릭 </div>
-					</a>
-				</li>
-				<li>|</li>
-				<li><a href="#">플라워 클래스</a></li>
-				<li><a href="#">당일 꽃 배송</a></li>
-				<li><a href="#">시즈널 블룸</a></li>
-				<li><a href="#">드라이 플라워</a></li>
-				<li><a href="#">소품샵</a></li>
-			</ul>
 		</div>
+		<ul class="category wrap">
+			<li><a href="#">꽃 정기구독</a></li>
+			<li class="divider"><a href="./list.html">플랜트 정기구독</a></li>
+			<li><a href="#">플라워 클래스</a></li>
+			<li><a href="#">당일 꽃 배송</a></li>
+			<li><a href="#">시즈널 블룸</a></li>
+			<li><a href="#">드라이 플라워</a></li>
+			<li><a href="#">소품샵</a></li>
+		</ul>
 	</header>
 
-<!--섹션1 : INDEX-->
-	<section class="sec1" >		
-		<div class="slideshow-container">
+	<div class="cantainer intro">
+		<!-- 메인 배너 -->
+		<section class="banner" >		
+			<div class="slideshow-container">
+				<div class="Slides fade"><img src="../../../images/kukka/main3.jpg" alt="배너1"></div>
+				<div class="Slides fade"><img src="../../../images/kukka/main2.jpg" alt="배너2"></div>
+				<div class="Slides fade"><img src="../../../images/kukka/main1.jpg" alt="배너3"></div>
+				
+				<div class="page">
+					<span class="cur_page">1</span> / <span class="total_page">3</span>
+				</div>
 
-			<div class="mySlides fade">
-	  			<div class="numbertext">1 / 3</div>
-	  			<img src="../../../images/kukka/main3.jpg" alt="배너1">
-
+				<div class="dotBox">
+					<span class="dot"></span> 
+					<span class="dot"></span> 
+					<span class="dot"></span> 
+				</div>
 			</div>
+		</section>
+	</div>
 
-			<div class="mySlides fade">
-	  			<div class="numbertext">2 / 3</div>
-	  			<img src="../../../images/kukka/main2.jpg" alt="배너2">
-
-			</div>
-
-			<div class="mySlides fade">
-	 			<div class="numbertext">3 / 3</div>
-	  			<img src="../../../images/kukka/main1.jpg" alt="배너3">
-
-			</div>
-
-		</div>
-		<br>
-
-		<div style="text-align:center" class="dotBox">
-		  	<span class="dot"></span> 
-		  	<span class="dot"></span> 
-		  	<span class="dot"></span> 
-		</div>
-
-	</section>
 <!--섹션2 -->
 	<section class="sec2" id="sec2">
 		<div>
@@ -102,7 +86,7 @@
 	<section class="sec3" id="sec3">
 		<h1>NEW <span class="brown">PRODUCT</span></h1>
 		<div class="sec3Wrap">
-			<ul class="plant Slides fade">
+			<ul class="plant plant_Slides fade">
 				<li>
 					<a href="#">
 						<img src="../../../images/kukka/Sansevieria.png" alt="산세베리아">
@@ -136,7 +120,7 @@
 					</a>
 				</li>
 			</ul>
-			<ul class="plant Slides fade">
+			<ul class="plant plant_Slides fade">
 				<li>
 					<a href="#">
 						<img src="../../../images/kukka/Goosefoot.png" alt="싱고니움">
@@ -297,25 +281,33 @@ function myFunction() {
         x.style.display = "none";
     }
 }
-//section 1
+
+	// slide_show
 	var slideIndex = 0;
 	showSlides();
 
 	function showSlides() {
-	    var i;
-	    var slides = document.getElementsByClassName("mySlides");
-	    var dots = document.getElementsByClassName("dot");
-	    for (i = 0; i < slides.length; i++) {
-	       slides[i].style.display = "none";  
-	    }
-	    slideIndex++;
-	    if (slideIndex > slides.length) {slideIndex = 1}    
-	    for (i = 0; i < dots.length; i++) {
-	        dots[i].className = dots[i].className.replace(" active", "");
-	    }
-	    slides[slideIndex-1].style.display = "block";  
-	    dots[slideIndex-1].className += " active";
-	    setTimeout(showSlides, 2000); // Change image every 2 seconds
+		var slides 	 = document.querySelectorAll('.Slides');
+		var dots 		 = document.getElementsByClassName('dot');
+		var cur_page = document.getElementsByClassName('cur_page')[0];
+
+		for (var i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+		}
+
+		slideIndex++;
+		slideIndex = (slideIndex > slides.length) ? 1 : slideIndex; 
+		console.log(slideIndex+','+slides.length)
+
+		for (var i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+		}
+
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += ' active';
+		cur_page.innerHTML = slideIndex;
+
+		setTimeout(showSlides, 2000); 
 	}
 
 //section3
