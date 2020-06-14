@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="../../../css/font/font.css">
 	<link rel="stylesheet" href="../../../css/projects/kukka.css">
-	<script src="../../../js/plugin/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 
@@ -40,7 +39,7 @@
 
 	<div class="cantainer intro">
 		<!-- 메인 배너 -->
-		<section class="banner" >
+		<section class="banner" onload="showSlides()" >
 			<div class="slideshow-container">
 				<div class="Slides fade"><img src="../../../images/kukka/main3.jpg" alt="배너1"></div>
 				<div class="Slides fade"><img src="../../../images/kukka/main2.jpg" alt="배너2"></div>
@@ -269,71 +268,6 @@
 			<a href="../../index.html">NH 포트폴리오로 돌아가기</a>
 		</p>
 	</footer>
-
-<!--스크립트-->
-<script>
-//noty
-function myFunction() {
-    var x = document.getElementById("noty");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-	// slide_show
-	var slideIndex = 0;
-	showSlides();
-
-	function showSlides() {
-		var slides 	 = document.querySelectorAll('.Slides');
-		var dots 		 = document.getElementsByClassName('dot');
-		var cur_page = document.getElementsByClassName('cur_page')[0];
-
-		for (var i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";
-		}
-
-		slideIndex++;
-		slideIndex = (slideIndex > slides.length) ? 1 : slideIndex;
-		console.log(slideIndex+','+slides.length)
-
-		for (var i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
-		}
-
-		slides[slideIndex-1].style.display = "block";
-		dots[slideIndex-1].className += ' active';
-		cur_page.innerHTML = slideIndex;
-
-		setTimeout(showSlides, 2000);
-	}
-
-//section3
-	var a = 1;
-	slide(a);
-
-	function plusSlides(n) {
-	  	slide(a += n);
-	}
-
-	function currentSlide(n) {
-	 	slide(a = n);
-	}
-
-	function slide(n) {
-	  	var i;
-	  	var slides = document.getElementsByClassName("Slides");
-	  	if (n > slides.length) {a = 1}
-	  	if (n < 1) {a = slides.length}
-	  	for (i = 0; i < slides.length; i++) {
-	    	  slides[i].style.display = "none";
-	  	}
-	  slides[a-1].style.display = "block";
-	}
-
-</script>
-
+	<script type="text/javascript" src="../../../js/projects/kukka_intro.js"></script>
 </body>
 </html>

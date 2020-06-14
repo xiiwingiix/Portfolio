@@ -33,13 +33,12 @@ header > ul.category > li {display: flex; width: 100%;;}
 .intro > section.banner > div.slideshow-container {position: relative;}
 .intro > section.banner > div.slideshow-container > div.Slides {display: none;}
 .intro > section.banner > div.slideshow-container > div.Slides img {vertical-align: middle; width: 100%; }
+.intro > section.banner > div.slideshow-container > div.page {position: absolute;top: 0;background: rgba(255,255,255,0.5);padding: 2px 10px;border-radius: 20px;margin: 10px;border: 1px solid #d5d5d5;}
 .intro > section.banner > div.slideshow-container > div.dotBox{position: absolute; bottom: 25px; left: 0; right: 0; width:70px; margin: 0 auto;text-align: center;}
 .intro > section.banner > div.slideshow-container > div.dotBox > .dot{ height: 15px; width: 15px; margin: 0 2px; background-color: rgba(255,255,255,.7); border-radius: 50%; display: inline-block; transition: background-color 0.6s ease; }
 .intro > section.banner > div.slideshow-container > div.dotBox > .dot.active{background-color: rgba(255,255,255,1);}
 
 
-.text { color: #fff; font-size: 20px; padding: 8px 12px; position: absolute; top: 180px;width: 100%; text-align: center;}
-.numbertext { color: #f2f2f2;font-size: 12px; padding: 8px 12px; position: absolute; top: 0;}
 
 /* nav
 /* nav{background:#212121; width:85% ; height:35px; margin-left: 15%; position: relative;} */
