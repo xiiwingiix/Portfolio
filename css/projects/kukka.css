@@ -34,20 +34,14 @@ ul.util li:nth-child(3){position: absolute; top:5px; right:86px;}
 ul.util li:nth-child(4){position: absolute; top:5px; right:10px;}
 
 
-
-
 .brwonBx{width: 120px; height: 55px; background: #e8d6bb; color: #fff; line-height: 55px; border-radius: 30px; font-weight: bold;box-shadow: 1px 1px 1px #5a5958; text-transform: uppercase;}
 .brwonBx > a{color: #fff;}
 .brwonBx:hover{background: #c2b197;}
 .brown{color: #c2b197; font-weight: bold;font-family: 'Assistant';}
 
-/* 알림 */
-#noty {background: #c2b197; width: 250px; height: 40px; border-radius: 5px; float: left; position: absolute;left: 0; top: 60px; line-height: 40px; color: #fff;}
-#noty p {color: #fff;}
-#noty p span {padding-left: 30px; color: #fff; font-size: 20px; font-weight: bold; cursor: pointer;}
 
 /* 헤더 */
-header{width: 100%; height: 100%; position:fixed; top:0; left: 0; }
+header{width: 100%; position:fixed; top:0; left: 0; }
 header > .login{width: 100%; height: 40px; background: #ebebeb;}
 header > .login > .wrap{width: 1200px; margin: 0 auto; position: relative;}
 header > .login p{line-height: 40px; font-family: 'Assistant'; font-weight: 400; width: 350px; }
@@ -55,12 +49,19 @@ header > .login ul{overflow: hidden;position: absolute;right: 0px; top: 0; botto
 header > .login ul > li{float: left; padding: 0 15px; font-size: 14px; position: relative;}
 
 .nav {width: 62.5%;  margin: 0 auto;}
+.nav > ul{overflow: hidden; width: 1050px;margin: 0 auto;}
+.nav > ul li{float: left; font-size:16px; font-weight: bold;  text-align: center; position: relative;}
+.nav > ul li.division::after{content: '|';}
+.nav > ul li.noti > a {animation-name: chgColor;animation-duration: 4s;animation-iteration-count: infinite;}
+.nav > ul li > a {padding: 20px 23px 20px 25px; display: inline-block;}
 .nav > a > img {width: 489px; display: block;margin: 50px auto;}
-.nav ul{overflow: visible; width: 1050px;margin: 0 auto;}
-.nav li{float: left; font-size:16px; font-weight: bold; padding: 20px 23px 20px 25px; text-align: center; position: relative;}
 .nav a {color: #2d2b2a;}
 .nav a:hover{color:#c2b197; }
 
+@keyframes chgColor {
+    from {color: #333;}
+    to {color: #c2b197;}
+  }
 
 /***섹션1***/
 .sec1{position: relative; margin-top:500px}
