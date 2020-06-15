@@ -81,6 +81,5 @@ function plusSlides(state) {
 
 // read_more 클릭 
 var btn_more = document.querySelector('.btn_more');
-btn_more.addEventListener('click', function(){popAlert('더보기','상단 카테고리 중 <span class="bold">플랜트정기구독</span>을 클릭해주세요')});
-// 
+btn_more.addEventListener('click', function(){popAlert('더보기','상단 카테고리 중 <span class="bold">플랜트정기구독</span>을 클릭해주세요.')});
 // read_more 클릭 :end

@@ -2,18 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Lobster|Roboto');
 
-/*
-font-family: 'Roboto', sans-serif;
-font-family: 'Lobster', cursive;
-font-family: 'Amatic SC', cursive;
-*/
-*{text-decoration: none; box-sizing: border-box; text-align: center; }
+
+*{text-decoration: none; box-sizing: border-box; }
 html{width: 100%; height: 100%;}
 body {font-family: 'NanumGothic','Roboto', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #2d2b2a;line-height: 1.6; margin: 0;}
-a {color: #555;}
-h1, ul, p{margin: 0; padding:0;}
+a {color: inherit;}
+h1, h4, ul, p{margin: 0; padding:0;}
 li {list-style: none;;}
-a{color: #555;}
 
 .wrap{width: 1200px; margin: 0 auto; position: relative; text-align: center;}
 
@@ -25,6 +20,12 @@ a{color: #555;}
 
 /* icon */
 .btn_close {background: url(../images/icon/ico_close.svg);}
+
+/* pop */
+.pop{background: rgba(0,0,0,0.5); position: fixed; left: 0; top: 0; width: 100%; height: 100%;}
+.pop > .pop_wrap {min-width: 300px; position: absolute; top: 50%; left: 50%; background: #fff; border-radius: 10px; padding: 20px}
+.pop > .pop_wrap > .pop_body {padding: 10px 0;min-height: 70px;}
+.pop > .pop_wrap > .pop_bottom > .btn {float: right; border: 1px solid #d5d5d5;font-size: 14px;padding: 3px 10px;display: inline-block;border-radius: 5px;}
 
 /* ***레이아웃***
 /*header*/

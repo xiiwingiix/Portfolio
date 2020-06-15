@@ -19,7 +19,7 @@ header > ul.category {display: flex;padding-bottom: 10px;;}
 header > ul.category > li {display: flex; width: 100%;;}
 
 /* intro */
-.intro > section {width: 1005; min-width:1200px }
+.intro > section {width: 100%; min-width:1200px }
 .intro > section.banner > div.slideshow-container {position: relative;}
 .intro > section.banner > div.slideshow-container > div.Slides {display: none;}
 .intro > section.banner > div.slideshow-container > div.Slides img {vertical-align: middle; width: 100%; }
@@ -45,38 +45,23 @@ header > ul.category > li {display: flex; width: 100%;;}
 .intro > section.new_product > div.group_slide_container > ul.group_slide > li {margin: 5px 20px; width: 260px; display:inline-block; background-color: #fff; padding: 30px 0;}
 .intro > section.new_product > div.group_slide_container > ul.group_slide > li > p {font-size:14px;font-weight: bold;}
 .intro > section.new_product > div.group_slide_container > ul.group_slide > li > p.txt {font-size: 12px; color: #999;}
-
-.intro > section.introduction {width: 100%;min-width: 1200px;}
+.intro > section.new_product > div.group_slide_container > a.prev, 
+.intro > section.new_product > div.group_slide_container > a.next { cursor: pointer; position: absolute; top: 50%; width: auto; margin-top: -22px; padding: 16px;color: black; font-weight: bold;  font-size: 18px; transition: 0.3s ease; border-radius: 3px;}
+.intro > section.new_product > div.group_slide_container > a.prev {left: 0;}
+.intro > section.new_product > div.group_slide_container > a.next {right: 0; }
+.intro > section.new_product > div.group_slide_container > a.prev:hover, 
+.intro > section.new_product > div.group_slide_container > a.next:hover {background-color: rgba(0,0,0,0.8); color: #fff;}
+.intro > section.introduction {background: url(../../images/kukka/wood.png); background-position: right; overflow: hidden;text-align: center; position: relative;}
 .intro > section.introduction > video {float: left;}
-.intro > section.introduction > div.about {float: left;}
+.intro > section.introduction > div.about {position: absolute;margin-left: 50%;top: 50%;margin-top: -120px;}
+.intro > section.introduction > div.about > h1{margin-bottom: 30px;}
+.intro > section.introduction > div.about > p > span{display: inline-block; margin-bottom: 15px; line-height: 1.8; }
+.intro > section.introduction > div.about > div.btn_more {background-color: #c2b197; color: #fff; border-radius: 20px; border-bottom: 2px solid #2b2b2b; display: inline-block; padding: 3px 10px; text-transform: uppercase;}
 
 @media only screen and (max-width: 300px) {
 }
 
 
-
-
-
-/* 섹션4 */
-.sec4 video { position: absolute; left: 0;  }
-.about > img { width: 50%;  position: absolute;right: 0; z-index: -9;}
-.about > div { width: 50%; height: 534px; position: absolute;right:0; padding: 90px 70px ; }
-.about h1 { text-align: left; padding-bottom: 60px; }
-.about p {text-align: left; padding-bottom: 30px; line-height: 1.2;}
-.about .brwonBx{margin: 0 auto;}
-
-@media only screen and (max-width: 1800px) {/* 낮은 해상도 조절 */
-    .about>div {padding: 50px 60px ; }
-    .about h1 {padding-bottom: 20px; }
-    .about p {padding-bottom: 15px; line-height: 1.5;}
-}
-@media only screen and (max-width: 1550px) {/* 낮은 해상도 조절 */
-    .about>div {padding: 50px 60px ; }
-    .about h1 {padding-bottom: 20px; }
-    .about p {padding-bottom: 10px; line-height: 1.5;}
-    .about p:nth-child(2) {display: none;}
-    .about p:nth-child(2) {display: none;}
-}
 
 /***섹션5***/
 .sec5{width: 62.5%; height: 920px;margin: 0 auto; position: relative; overflow: hidden;}
