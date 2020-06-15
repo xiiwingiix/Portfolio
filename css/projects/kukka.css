@@ -82,12 +82,23 @@ header > ul.category > li {display: flex; width: 100%;;}
 .intro > section.offshop > div.store_list {width: 780px; margin: 0 auto; overflow: hidden;}
 .intro > section.offshop > div.store_list > div {float: left; width: 350px; border: 1px solid #c2b197; margin: 5px; padding: 20px;background: #c2b197; color: #fff;}
 
+/* list_page */
+.list_page > div.btn_wrap {overflow: hidden;}
+.list_page > div.btn_wrap > button { border: none; outline: none; padding: 10px 22px;  cursor: pointer; float: left; margin: 80px  0px 20px 10px; color: #c2b197; background: #fff;}
+.list_page > div.btn_wrap > button:hover,
+.list_page > div.btn_wrap > button.active {background: #d3c5af; color: #fff;}
+.list_page > div.pdt_list {overflow: hidden;}
+figure{width: 31.3333%; float: left; margin: 0 1% 100px 1% ;}
+img{width: 100%;}
+img:hover{opacity: .7;}
+figcaption {margin-top: 30px; line-height: 2; letter-spacing: -1px;}
+.subtitle { font-weight: bold; }
+/***filter***/
+.filterDiv{display: none;}
+.show{display: block;} 
 
 
 
-
-
-/* 섹션7 */
 
 
 

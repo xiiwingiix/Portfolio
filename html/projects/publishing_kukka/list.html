@@ -4,69 +4,51 @@
 	<meta charset="utf-8">
 	<meta A http-equiv="X-UA-Compatible" content="IE=Edge">
 	<title>NHSung | KUKKA renewal</title>
-	<link rel="stylesheet" href="../../common/reset.css">
-	<link rel="stylesheet" href="../../common/NanumGothic/stylesheet_Nanumgothic.css">
-	<link rel="stylesheet" href="../../common/Assistant/stylesheet_Assistant.css">
-	<link rel="stylesheet" href="sub_2_Page.css">
-	<link rel="shortcut icon" href="../images/favicon.ico">
-
-	<!--제이쿼리-->
-	<script src="../../js/jquery-3.3.1.min.js"></script>
+	<link rel="shortcut icon" href="../../../images/favicon.ico">
+	<link rel="stylesheet" href="../../../css/font/font.css">
+	<link rel="stylesheet" href="../../../css/common.css">
+	<link rel="stylesheet" href="../../../css/projects/kukka.css">
 </head>
 <body>
-<!--알림-->
-	<div id="noty">
-		<p>i) 상품 중 "나의 우간다 오렌지 나무"를 클릭해보세요. <span onclick="myFunction()">→</span> </p>
-	</div>
-<!--헤더-->
 	<header >
-		<div class="login">
+		<div class="top">
 			<div class="wrap">
-				<p>Live evryday with beatiful flowers</p>
-				<ul>
-					<li><a href="#">로그인</a></li>
-					<li><a href="#">회원가입</a></li>
-					<li><a href="#">장바구니</a></li>
+				<p class="txt">Live everyday with beautiful flowers</p>
+				<ul class="mypage_list">
+					<li><a href="javascript:void(0)" onclick="more_view()">로그인</a></li>
+					<li><a href="javascript:void(0)" onclick="more_view()">회원가입</a></li>
+					<li><a href="javascript:void(0)" onclick="more_view()">장바구니</a></li>
 				</ul>
 			</div>
 		</div>
-		<div class="nav">
-			<a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
-			<ul>
-				<li><a href="#">꽃 정기구독</a></li>
-				<li><a href="sub_2_Page.html">플랜트 정기구독</a></li>
-				<li>|</li>
-				<li><a href="#">플라워 클래스</a></li>
-				<li><a href="#">당일 꽃 배송</a></li>
-				<li><a href="#">시즈널 블룸</a></li>
-				<li><a href="#">드라이 플라워</a></li>
-				<li><a href="#">소품샵</a></li>
-			</ul>
+		<div class="logo wrap">
+			<a href="./intro.html"><img src="../../../images/kukka/logo.png" alt="logo"></a>
 		</div>
+		<ul class="category wrap">
+			<li><a href="./list.html">꽃 정기구독</a></li>
+			<li class="divider"><a href="./list.html">플랜트 정기구독</a></li>
+			<li><a href="./list.html">플라워 클래스</a></li>
+			<li><a href="./list.html">당일 꽃 배송</a></li>
+			<li><a href="./list.html">시즈널 블룸</a></li>
+			<li><a href="./list.html">드라이 플라워</a></li>
+			<li><a href="./list.html">소품샵</a></li>
+		</ul>
 	</header>
 
-<article class="wrap">
-<!--섹션1 -->
-	<section class="sec1" >		
+	<article class="cantainer wrap list_page">
 		<h1>It is Green <span class="brown">Everywhere</span> you go</h1>
-		<div id="myBtnContainer">
-		 	 <button class="btn active" onclick="filterSelection('all')">전체보기</button>
-		 	 <button class="btn" onclick="filterSelection('subscription')">플랜트 정기구독</button>
-		 	 <button class="btn" onclick="filterSelection('seasonalGreen')">시즈널 그린</button>
-		 	 <button class="btn" onclick="filterSelection('sail')">판매 중</button>
+		<div class="btn_wrap">
+			<button class="active" onclick="filterSelection('all')">전체보기</button>
+			<button onclick="filterSelection('subscription')">플랜트 정기구독</button>
+			<button onclick="filterSelection('seasonalGreen')">시즈널 그린</button>
+			<button onclick="filterSelection('sale')">판매 중</button>
 		</div>
-		<div class="figWrap">
-			<figure class="filterDiv subscription sail">
-				<a href="#">
-					<div class="imgHover">
-						<img src="images/brooklynLife.jpg" alt="브루클린 라이프">
-					</div>
-					<figcaption>
-						<span class="subtitle">뉴욕 브루클의 그린 라이프, 4주에 한번</span><br>
-						12,900원/1달
-					</figcaption>
-				</a>
-			</figure>
+		<div class="pdt_list">
+			<a href="#" filter="sale">
+				<img src="images/brooklynLife.jpg" alt="브루클린 라이프">
+				<p class="tit">뉴욕 브루클의 그린 라이프, 4주에 한번</p>
+				<p class="bill">12,900원/1달</p>	
+			</a>
 			<figure class="filterDiv subscription sail">
 				<a href="#">
 					<img src="images/basicLife.jpg" alt="베이직한 라이프">
@@ -131,8 +113,7 @@
 				</a>
 			</figure>
 		</div>
-	</section>
-</article>
+	</article>
 <!--푸터-->
 	<footer>
 		<p> &copy;Copyright Nahye All Rights Reserved.</p>
