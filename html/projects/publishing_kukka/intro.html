@@ -5,7 +5,7 @@
 	<meta A http-equiv="X-UA-Compatible" content="IE=Edge">
 	<title>NHSung | KUKKA renewal</title>
 	<link rel="shortcut icon" href="../../../images/favicon.ico">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
 	<link rel="stylesheet" href="../../../css/font/font.css">
 	<link rel="stylesheet" href="../../../css/common.css">
 	<link rel="stylesheet" href="../../../css/projects/kukka.css">
@@ -18,9 +18,9 @@
 			<div class="wrap">
 				<p class="txt">Live everyday with beautiful flowers</p>
 				<ul class="mypage_list">
-					<li><a href="#">로그인</a></li>
-					<li><a href="#">회원가입</a></li>
-					<li><a href="#">장바구니</a></li>
+					<li><a href="javascript:void(0)" onclick="more_view()">로그인</a></li>
+					<li><a href="javascript:void(0)" onclick="more_view()">회원가입</a></li>
+					<li><a href="javascript:void(0)" onclick="more_view()">장바구니</a></li>
 				</ul>
 			</div>
 		</div>
@@ -28,13 +28,13 @@
 			<a href="./intro.html"><img src="../../../images/kukka/logo.png" alt="logo"></a>
 		</div>
 		<ul class="category wrap">
-			<li><a href="#">꽃 정기구독</a></li>
+			<li><a href="./list.html">꽃 정기구독</a></li>
 			<li class="divider"><a href="./list.html">플랜트 정기구독</a></li>
-			<li><a href="#">플라워 클래스</a></li>
-			<li><a href="#">당일 꽃 배송</a></li>
-			<li><a href="#">시즈널 블룸</a></li>
-			<li><a href="#">드라이 플라워</a></li>
-			<li><a href="#">소품샵</a></li>
+			<li><a href="./list.html">플라워 클래스</a></li>
+			<li><a href="./list.html">당일 꽃 배송</a></li>
+			<li><a href="./list.html">시즈널 블룸</a></li>
+			<li><a href="./list.html">드라이 플라워</a></li>
+			<li><a href="./list.html">소품샵</a></li>
 		</ul>
 	</header>
 
@@ -109,7 +109,7 @@
 					<span>우리는 KUKKA예요. 그리고 KUKKA를 누구보다 사랑하는 사람들이죠.</span><br>
 					<span>kukka는 필란드어로 꽃을 의미하는 단어예요. <br>꽃을 일상에서 가볍게 즐기는 필란드의 문화를 한국에 전파하는 것이 우리의 목표죠.</span> <br>
 				</p>
-				<div class="btn_more"><a href="javascript:void(0)">+ read more</a></div>
+				<div class="btn_more"><a href="javascript:void(0)" onclick="more_view()">+ read more</a></div>
 			</div>
 		</section>
 		<!-- //소개 -->
@@ -141,53 +141,26 @@
 		</section>
 		<!-- //season_pdt -->
 
+		<!-- offline store -->
+		<section class="offshop wrap">
+			<h1 class="mb40">KUKKA <span class="text_brown">showroom</span></h1>
+			<p class="mb20">	KUKKA는 누구나 쉽게 꽃을 즐기는 문화를 만들기 위해 노력하고 있어요.</p>
+			<p class="mb40"> 꽃을 가까이서 만져보고 향기도 맡아보고,<br>꽃속에서 커피와 함께 적은 휴식을 누릴 수 있는 그런 공간을 함께해요.			</p>
+			<div class="store_list">
+				<div>KUKKA <br> FLOWER BAR & COFFEE LAB <br>	@ITAEWON</div>
+				<div>KUKKA <br> FLOWER MARKET & COFFEE TABLE <br> @GWANGHWAMUN	</div>
+			</div>
+		</section>
+		<!-- //offline store -->
+
 	</div>
 
 
-
-
-
-
-
-
-<!--섹션6-->
-
-<!--섹션7-->
-	<section class="sec7">
-		<h1>KUKKA <span class="brown">showroom</span></h1>
-		<p>
-			KUKKA는 누구나 쉽게 꽃을 즐기는 문화를 만들기 위해 노력하고 있어요.
-		</p>
-		<p>
-			꽃을 가까이서 만져보고 향기도 맡아보고,<br>
-			꽃속에서 커피와 함께 적은 휴식을 누릴 수 있는 그런 공간을 함께해요.
-		</p>
-			<div>
-				<a href="#">
-					<div class="box1">
-						KUKKA <br>
-						FLOWER BAR & COFFEE LAB <br>
-						@ITAEWON
-					</div>
-				</a>
-				<a href="#">
-					<div class="box1">
-						KUKKA <br>
-						FLOWER MARKET & COFFEE TABLE <br>
-						@GWANGHWAMUN
-					</div>
-				</a>
-			</div>
-	</section>
 <!--푸터-->
 	<footer>
 		<p>COPYRIGHT &copy; 2018</p>
-		<p>
-			<a href="../../index.html">NH 포트폴리오로 돌아가기</a>
-		</p>
+		<p><a href="../../../index.html">NH 포트폴리오로 돌아가기</a></p>
 	</footer>
-
-
 
 	<script type="text/javascript" src="../../../js/projects/common.js"></script>
 	<script type="text/javascript" src="../../../js/projects/kukka_intro.js"></script>
