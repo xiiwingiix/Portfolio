@@ -7,29 +7,44 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Lobster', cursive;
 font-family: 'Amatic SC', cursive;
 */
-
-body {font-family: 'Roboto', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #555;line-height: 1.6;}
+*{text-decoration: none; box-sizing: border-box; text-align: center; }
+html{width: 100%; height: 100%;}
+body {font-family: 'NanumGothic','Roboto', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #2d2b2a;line-height: 1.6; margin: 0;}
+a {color: #555;}
+h1, ul, p{margin: 0; padding:0;}
+li {list-style: none;;}
 a{color: #555;}
 
-/****레이아웃****/
+.wrap{width: 1200px; margin: 0 auto; position: relative; text-align: center;}
+
+.w50 {width: 50%;}
+.mt10 {margin-top: 10px;} .mt30{margin-top: 30px;}
+
+.text_brown{color : #c2b197}
+.bold {font-weight: bold;;}
+
+/* icon */
+.btn_close {background: url(../images/icon/ico_close.svg);}
+
+/* ***레이아웃***
 /*header*/
-header{width: 15%; height: 100%; position:fixed;/*브라우저를 기준으로 위치값을 잡음*/ top:0; left: 0; }
+/* header{width: 15%; height: 100%; position:fixed;브라우저를 기준으로 위치값을 잡음 top:0; left: 0; } */
 
 /*nav*/
-nav{background:#212121; width:85% ; height:35px; margin-left: 15%; position: relative;}
+/* nav{background:#212121; width:85% ; height:35px; margin-left: 15%; position: relative;} */
 
 /* header 컨텐츠*/
-header > h1{background:url(../images/logo1.png) no-repeat; width:180px; height: 136px; text-indent:-999%; position: absolute;top:70px; left:50%; transform:translateX(-50%);/*position을 이용한 중앙 정렬 : left:50% 지정 후 transform:translateX(-50%)으로 가로 값을 제어해준다. ;*/background-size: contain;/*h1의 크기에 맞춰 배경 이미지가 자동 조절*/}
+/* header > h1{background:url(../images/logo1.png) no-repeat; width:180px; height: 136px; text-indent:-999%; position: absolute;top:70px; left:50%; transform:translateX(-50%);background-size: contain;}
 
 ul#gnb{position: absolute; top: 310px; right:100px;}
 ul#gnb a{display: block; font-size: 18px;text-transform: uppercase;font-family: 'Amatic SC', cursive; text-decoration: none; letter-spacing: 1px; line-height: 2;}
 ul#gnb a:hover{color: tomato;}
 ul#gnb a i{margin-right: 8px;}
 ul.sns {width:90px; height: 47px; position: absolute; bottom:44px; right: 50%; transform:translateX(50%);}
-ul.sns li{float: left;}
+ul.sns li{float: left;} */
 
 /*nav 컨텐츠*/
-ul.util li:nth-child(1){position: absolute; top:5px; left:15px;}
+/*ul.util li:nth-child(1){position: absolute; top:5px; left:15px;}
 ul.util li:nth-child(2){position: absolute; top:5px; left:145px;}
 ul.util li:nth-child(3){position: absolute; top:5px; right:86px;}
-ul.util li:nth-child(4){position: absolute; top:5px; right:10px;}
+ul.util li:nth-child(4){position: absolute; top:5px; right:10px;} */

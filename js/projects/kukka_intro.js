@@ -62,8 +62,7 @@ function get_newProduct(){
 get_newProduct()
 // get_new_product : end
 
-
-
+// 신상품 슬라이드 이동 
 function plusSlides(state) {
 	var gSlides 		= document.querySelector('.group_slide');
 	var first_slide = gSlides.firstElementChild;
@@ -71,10 +70,17 @@ function plusSlides(state) {
 
 
 	if (state == 'prev'){
-		gSlides.appendChild(first_slide)
-	} else {
 		gSlides.insertBefore(last_slide,first_slide)
+	} else {
+		gSlides.appendChild(first_slide)
 	}
 
 	return false;
 }
+// 신상품 슬라이드 이동 : end
+
+// read_more 클릭 
+var btn_more = document.querySelector('.btn_more');
+btn_more.addEventListener('click', function(){popAlert('더보기','상단 카테고리 중 <span class="bold">플랜트정기구독</span>을 클릭해주세요')});
+// 
+// read_more 클릭 :end
