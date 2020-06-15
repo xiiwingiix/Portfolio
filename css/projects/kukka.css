@@ -67,28 +67,22 @@ header > ul.category > li {display: flex; width: 100%;;}
 .intro > section.enjoy > div.imgtxt p:nth-child(1){font-size: 25px; padding-bottom: 25px; }
 .intro > section.enjoy > div.imgtxt p:nth-child(2){font-size: 16px; }
 
+.intro > section.season_pdt{width: 100%; background: #f5f5f5; padding: 100px 0;}
+.intro > section.season_pdt > div.wrap > div.pdt_list {overflow: hidden;}
+.intro > section.season_pdt > div.wrap > div.pdt_list > div{float: left; position: relative; margin: 7px; width: 31.333%}
+.intro > section.season_pdt > div.wrap > div.pdt_list > div > img {width: 100%;}
+.intro > section.season_pdt > div.wrap > div.pdt_list > div > img:hover {opacity: .7;}
+.intro > section.season_pdt > div.wrap > div.pdt_list > div > div.btn_buy{width: 120px; height: 36px; background: #c2b197; color: #fff; line-height: 36px; font-size: 14px; text-transform: uppercase; position: absolute; top: 205px;}
+.intro > section.season_pdt > div.wrap > div.pdt_list > div > h6{font-size: 18px; font-weight: bold; text-align: left; padding: 20px 0 10px;}
+.intro > section.season_pdt > div.wrap > div.pdt_list > div > p.txt{font-size: 14px; text-align: left; letter-spacing: -1px; padding-bottom: 10px; }
+.intro > section.season_pdt > div.wrap > div.pdt_list > div > p.price{font-size: 18px; text-align: left; color: #c2b197; font-weight: bold;}
 
 
 
 
-/* 섹션6 */
-.sec6{width: 100%; height: 690px; background: #f5f5f5;}
-.sec6 .wrap {width: 62.5%; margin: 0 auto;}
-.sec6 h1 {padding: 100px 0 60px 0;}
-.layout > div{float: left; position: relative; margin: 7px; width: 31.333%}
-.layout div img {width: 100%;}
-.layout div img:hover {opacity: .7;}
-.layout div p{width: 100%;}
-.layout div div{width: 120px; height: 36px; background: #c2b197; color: #fff; line-height: 36px; font-size: 14px; text-transform: uppercase; position: absolute; top: 205px;}
-.layout div h6{font-size: 18px; font-weight: bold; text-align: left; padding: 28px 0 22px;}
-.layout div p{font-size: 14px; text-align: left; letter-spacing: -1px; padding-bottom: 20px; }
-.layout div p:nth-child(5){font-size: 18px; text-align: left; color: #c2b197;}
-@media only screen and (max-width: 1800px) {
-    .layout div div{ position: absolute; top: 190px;}
-}
-@media only screen and (max-width: 1700px) {
-    .layout div div{ display: none;}
-}
+
+
+
 
 /* 섹션7 */
 .sec7{width: 62.5%; height: 500px; margin: 0 auto;}
