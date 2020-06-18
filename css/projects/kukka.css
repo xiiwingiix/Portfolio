@@ -44,6 +44,7 @@ header > ul.category > li {display: flex; width: 100%;;}
 .intro > section.new_product > div.group_slide_container {overflow: hidden;}
 .intro > section.new_product > div.group_slide_container > ul.group_slide {font-size: 0; white-space: nowrap;}
 .intro > section.new_product > div.group_slide_container > ul.group_slide > li {margin: 5px 20px; width: 260px; display:inline-block; background-color: #fff; padding: 30px 0;}
+.intro > section.new_product > div.group_slide_container > ul.group_slide > li > img {width: 60%;}
 .intro > section.new_product > div.group_slide_container > ul.group_slide > li > p {font-size:14px;font-weight: bold;}
 .intro > section.new_product > div.group_slide_container > ul.group_slide > li > p.txt {font-size: 12px; color: #999;}
 .intro > section.new_product > div.group_slide_container > a.prev, 

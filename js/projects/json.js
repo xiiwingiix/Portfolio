@@ -69,3 +69,62 @@ var kukka_intro_product = {
 		"price":"11,900"
 	}]
 }
+
+var kukka_list = [
+	{
+		"filter" :"sale",
+		"imgSrc" : "../../../images/brooklynLife.jpg",
+		"link" : "./detail_page.html",
+		"alt" : "브루클린 라이프",
+		"tit" : "뉴욕 브루클의 그린 라이프, 4주에 한번",
+		"price" : "12,900원/1달"
+	},
+	{
+		"filter" :"sale|subscription",
+		"imgSrc" : "../../../images/basicLife.jpg",
+		"link" : "./detail_page.html",
+		"alt" : "베이직한 라이프",
+		"tit" : "베이직한 데일리 그린 라이프, 4주에 한번",
+		"price" : "6,900원/1달"
+	},
+	{
+		"filter" :"sale|subscription",
+		"imgSrc" : "../../../images/waterCulture.jpg",
+		"link" : "./detail_page.html",
+		"alt" : "수경재배",
+		"tit" : "흙없어도 쉽게 키우는  그린 라이프, 4주에 한번",
+		"price" : "15,900원/1달 (수경용 화분 포함)"
+	},
+	{
+		"filter" :"sale|seasonalGreen",
+		"imgSrc" : "../../../images/orangeJasmine.jpg",
+		"link" : "./detail_page.html",
+		"alt" : "오렌지자스민",
+		"tit" : "[kukkaXHaBITAT] 나의 우간다 오렌지 나무",
+		"price" : "15,900원"
+	},
+	{
+		"filter" :"sale|seasonalGreen",
+		"imgSrc" : "../../../images/stuki.jpg",
+		"link" : "./detail_page.html",
+		"alt" : "스투키",
+		"tit" : "미세먼지를 정화하고, 전자파를 차단해요",
+		"price" : "11,900원"
+	},
+	{
+		"filter" :"seasonalGreen",
+		"imgSrc" : "../../../images/avisMedium.jpg",
+		"link" : "./detail_page.html",
+		"alt" : "아비스 중형",
+		"tit" : "작은 정원이 되어줄 싱그러운 아비스",
+		"price" : "49,900원|품절"
+	},
+	{
+		"filter" :"seasonalGreen",
+		"imgSrc" : "../../../images/yarma.jpg",
+		"link" : "./detail_page.html",
+		"alt" : "율마",
+		"tit" : "나만의 작은 나무, 율마",
+		"price" : "12,900원|품절"
+	},
+]

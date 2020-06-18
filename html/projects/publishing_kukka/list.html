@@ -44,145 +44,79 @@
 			<button onclick="filterSelection('sale')">판매 중</button>
 		</div>
 		<div class="pdt_list">
-			<a href="#" filter="sale">
-				<img src="images/brooklynLife.jpg" alt="브루클린 라이프">
-				<p class="tit">뉴욕 브루클의 그린 라이프, 4주에 한번</p>
-				<p class="bill">12,900원/1달</p>	
-			</a>
-			<figure class="filterDiv subscription sail">
-				<a href="#">
-					<img src="images/basicLife.jpg" alt="베이직한 라이프">
-					<figcaption>
-						<span class="subtitle">베이직한 데일리 그린 라이프, 4주에 한번 </span><br>
-						6,900원/1달
-					</figcaption>
-				</a>
-			</figure>
-			<figure class="filterDiv subscription sail">
-				<a href="#">
-					<img src="images/waterCulture.jpg" alt="수경재배">
-					<figcaption>
-						<span class="subtitle">흙없어도 쉽게 키우는  그린 라이프, 4주에 한번</span> <br>
-						15,900원/1달 (수경용 화분 포함)
-					</figcaption>
-				</a>
-			</figure>
-			<figure class="filterDiv seasonalGreen sail">
-				<a href="sub_2_detailPage/sub_2_detailPage.html">
-					<img src="images/orangeJasmine.jpg" alt="오렌지자스민">
-					<figcaption>
-						<span class="subtitle">[kukkaXHaBITAT] 나의 우간다 오렌지 나무 </span><br> 
-						15,900원
-					</figcaption>
-				</a>
-			</figure>
-			<figure class="filterDiv seasonalGreen sail">
-				<a href="#">
-					<img src="images/avis.jpg" alt="아비스">
-					<figcaption>
-						<span class="subtitle">또르르말린 잎이 그리는 연두빛 물결, 아비스</span> <br> 
-						12,900원
-					</figcaption>
-				</a>
-			</figure>
-			<figure class="filterDiv seasonalGreen sail">
-				<a href="#">
-					<img src="images/stuki.jpg" alt="스투키">
-					<figcaption>
-						<span class="subtitle">미세먼지를 정화하고, 전자파를 차단해요 </span><br>
-						11,900원
-					</figcaption>
-				</a>
-			</figure>
-			<figure class="filterDiv seasonalGreen">
-				<a href="#">
-					<img src="images/avisMedium.jpg" alt="아비스 중형">
-					<figcaption>
-						<span class="subtitle">작은 정원이 되어줄 싱그러운 아비스 </span><br>
-						49,900원 <span>[품절]</span>
-					</figcaption>
-				</a>
-			</figure>
-			<figure class="filterDiv seasonalGreen">
-				<a href="#">
-					<img src="images/yarma.jpg" alt="율마">
-					<figcaption>
-						<span class="subtitle">나만의 작은 나무, 율마 </span><br>
-						12,900원 <span>[품절]</span>
-					</figcaption>
-				</a>
-			</figure>
+
+
 		</div>
 	</article>
 <!--푸터-->
 	<footer>
 		<p> &copy;Copyright Nahye All Rights Reserved.</p>
-		<p>
-			<a href="../../index.html">NH 포트폴리오로 돌아가기</a>
-		</p>
+		<p><a href="../../index.html">NH 포트폴리오로 돌아가기</a></p>
 	</footer>
 
 <!--스크립트-->
 <script>
-
+//https://run.mocky.io/v3/43db7ae1-785e-460d-ad26-ad008ed397f3
 //noty
-function myFunction() {
-    var x = document.getElementById("noty");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+// function myFunction() {
+//     var x = document.getElementById("noty");
+//     if (x.style.display === "none") {
+//         x.style.display = "block";
+//     } else {
+//         x.style.display = "none";
+//     }
+// }
 
-//filter 스크립트 
-	filterSelection("all")
-	function filterSelection(c) {
-	  var x, i;
-	  x = document.getElementsByClassName("filterDiv");
-	  if (c == "all") c = "";
-	  for (i = 0; i < x.length; i++) {
-	    NHRemoveClass(x[i], "show");
-	    if (x[i].className.indexOf(c) > -1) NHAddClass(x[i], "show");
-	  }
-	}
+// //filter 스크립트 
+// 	filterSelection("all")
+// 	function filterSelection(c) {
+// 	  var x, i;
+// 	  x = document.getElementsByClassName("filterDiv");
+// 	  if (c == "all") c = "";
+// 	  for (i = 0; i < x.length; i++) {
+// 	    NHRemoveClass(x[i], "show");
+// 	    if (x[i].className.indexOf(c) > -1) NHAddClass(x[i], "show");
+// 	  }
+// 	}
 
-	// Show filtered elements
-	function NHAddClass(element, name) {
-	  var i, arr1, arr2;
-	  arr1 = element.className.split(" ");
-	  arr2 = name.split(" ");
-	  for (i = 0; i < arr2.length; i++) {
-	    if (arr1.indexOf(arr2[i]) == -1) {
-	      element.className += " " + arr2[i];
-	    }
-	  }
-	}
+// 	// Show filtered elements
+// 	function NHAddClass(element, name) {
+// 	  var i, arr1, arr2;
+// 	  arr1 = element.className.split(" ");
+// 	  arr2 = name.split(" ");
+// 	  for (i = 0; i < arr2.length; i++) {
+// 	    if (arr1.indexOf(arr2[i]) == -1) {
+// 	      element.className += " " + arr2[i];
+// 	    }
+// 	  }
+// 	}
 
-	// Hide elements that are not selected
-	function NHRemoveClass(element, name) {
-	  var i, arr1, arr2;
-	  arr1 = element.className.split(" ");
-	  arr2 = name.split(" ");
-	  for (i = 0; i < arr2.length; i++) {
-	    while (arr1.indexOf(arr2[i]) > -1) {
-	      arr1.splice(arr1.indexOf(arr2[i]), 1); 
-	    }
-	  }
-	  element.className = arr1.join(" ");
-	}
+// 	// Hide elements that are not selected
+// 	function NHRemoveClass(element, name) {
+// 	  var i, arr1, arr2;
+// 	  arr1 = element.className.split(" ");
+// 	  arr2 = name.split(" ");
+// 	  for (i = 0; i < arr2.length; i++) {
+// 	    while (arr1.indexOf(arr2[i]) > -1) {
+// 	      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+// 	    }
+// 	  }
+// 	  element.className = arr1.join(" ");
+// 	}
 
-	// Add active class to the current control button (highlight it)
-	var btnContainer = document.getElementById("myBtnContainer");
-	var btns = btnContainer.getElementsByClassName("btn");
-	for (var i = 0; i < btns.length; i++) {
-	  btns[i].addEventListener("click", function() {
-	    var current = document.getElementsByClassName("active");
-	    current[0].className = current[0].className.replace(" active", "");
-	    this.className += " active";
-	  });
-	}
+// 	// Add active class to the current control button (highlight it)
+// 	var btnContainer = document.getElementById("myBtnContainer");
+// 	var btns = btnContainer.getElementsByClassName("btn");
+// 	for (var i = 0; i < btns.length; i++) {
+// 	  btns[i].addEventListener("click", function() {
+// 	    var current = document.getElementsByClassName("active");
+// 	    current[0].className = current[0].className.replace(" active", "");
+// 	    this.className += " active";
+// 	  });
+// 	}
 </script>
+<script type="text/javascript" src="../../../js/projects/kukka_list.js"></script>
+
 
 </body>
 </html>

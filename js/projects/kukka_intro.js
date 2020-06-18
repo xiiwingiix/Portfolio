@@ -94,7 +94,7 @@ function plusSlides(state) {
 
 
 function more_view (){
-	popAlert('더보기','상단 카테고리를 클릭하세요.')
+	popAlert('더보기','상단 카테고리를 클릭하세요.');
 }
 
 
