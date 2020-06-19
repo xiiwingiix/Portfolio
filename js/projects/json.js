@@ -73,7 +73,7 @@ var kukka_intro_product = {
 var kukka_list = [
 	{
 		"filter" :"sale",
-		"imgSrc" : "../../../images/brooklynLife.jpg",
+		"imgSrc" : "../../../images/kukka/brooklynLife.jpg",
 		"link" : "./detail_page.html",
 		"alt" : "브루클린 라이프",
 		"tit" : "뉴욕 브루클의 그린 라이프, 4주에 한번",
@@ -81,7 +81,7 @@ var kukka_list = [
 	},
 	{
 		"filter" :"sale|subscription",
-		"imgSrc" : "../../../images/basicLife.jpg",
+		"imgSrc" : "../../../images/kukka/basicLife.jpg",
 		"link" : "./detail_page.html",
 		"alt" : "베이직한 라이프",
 		"tit" : "베이직한 데일리 그린 라이프, 4주에 한번",
@@ -89,7 +89,7 @@ var kukka_list = [
 	},
 	{
 		"filter" :"sale|subscription",
-		"imgSrc" : "../../../images/waterCulture.jpg",
+		"imgSrc" : "../../../images/kukka/waterCulture.jpg",
 		"link" : "./detail_page.html",
 		"alt" : "수경재배",
 		"tit" : "흙없어도 쉽게 키우는  그린 라이프, 4주에 한번",
@@ -97,7 +97,7 @@ var kukka_list = [
 	},
 	{
 		"filter" :"sale|seasonalGreen",
-		"imgSrc" : "../../../images/orangeJasmine.jpg",
+		"imgSrc" : "../../../images/kukka/orangeJasmine.jpg",
 		"link" : "./detail_page.html",
 		"alt" : "오렌지자스민",
 		"tit" : "[kukkaXHaBITAT] 나의 우간다 오렌지 나무",
@@ -105,7 +105,7 @@ var kukka_list = [
 	},
 	{
 		"filter" :"sale|seasonalGreen",
-		"imgSrc" : "../../../images/stuki.jpg",
+		"imgSrc" : "../../../images/kukka/stuki.jpg",
 		"link" : "./detail_page.html",
 		"alt" : "스투키",
 		"tit" : "미세먼지를 정화하고, 전자파를 차단해요",
@@ -113,7 +113,7 @@ var kukka_list = [
 	},
 	{
 		"filter" :"seasonalGreen",
-		"imgSrc" : "../../../images/avisMedium.jpg",
+		"imgSrc" : "../../../images/kukka/avisMedium.jpg",
 		"link" : "./detail_page.html",
 		"alt" : "아비스 중형",
 		"tit" : "작은 정원이 되어줄 싱그러운 아비스",
@@ -121,10 +121,10 @@ var kukka_list = [
 	},
 	{
 		"filter" :"seasonalGreen",
-		"imgSrc" : "../../../images/yarma.jpg",
+		"imgSrc" : "../../../images/kukka/yarma.jpg",
 		"link" : "./detail_page.html",
 		"alt" : "율마",
 		"tit" : "나만의 작은 나무, 율마",
 		"price" : "12,900원|품절"
-	},
+	}
 ]
