@@ -12,9 +12,9 @@ function get_Product(){
       console.log(filter);
 
 			el += '<a href="'+item.link+'" >'
-			el += '	<img src="'+item.imgSrc+'" alt="'+item.alt+'">'
+			el += '	<div class="pdt_img bg_transition" style="background-image:url('+item.imgSrc+')"></div>'
 			el += '	<p class="tit mt10">'+item.tit+'</p>'
-			el += '	<p class="price mt10">'+item.price+'</p>'
+			el += '	<p class="price">'+item.price+'</p>'
 			el += '</li>'
     });
 

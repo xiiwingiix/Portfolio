@@ -19,6 +19,14 @@ li {list-style: none;;}
 .text_brown{color : #c2b197}
 .bold {font-weight: bold;;}
 
+.bg_transition{
+  transition:         background-size .3s ease-in;
+  -moz-transition:    background-size .3s ease-in;
+  -ms-transition:     background-size .3s ease-in;
+  -o-transition:      background-size .3s ease-in;
+  -webkit-transition: background-size .3s ease-in;
+}
+
 /* icon */
 .btn_close {background: url(../images/icon/ico_close.svg);}
 
