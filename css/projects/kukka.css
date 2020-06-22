@@ -102,14 +102,17 @@ header > div.category_wrap > ul.category > li > a {padding: 10px 0;}
 .detail_page > section > div.info_top{text-align: left;padding-bottom:10px;}
 .detail_page > section > div.info_top > div.location { font-size: 13px; display: inline-block;}
 .detail_page > section > div.info_top > div.location > a:hover {text-decoration: underline;}
-.detail_page > section > div.info_top > div.page_trans {float: right; font-size: 12px;}
-.detail_page > section > div.info_top > div.page_trans > a {padding: 5px;color: #999;}
+.detail_page > section > div.info_top > div.page_trans {float: right; font-size: 12px;color: #999;}
+.detail_page > section > div.info_top > div.page_trans > a {padding: 5px;}
 .detail_page > section > div.info_top > div.page_trans > a:hover {color: #222;}
 .detail_page > section > div.info_body {overflow: hidden;}
 .detail_page > section > div.info_body > aside {width: 55%; float: left;;}
 .detail_page > section > div.info_body > aside > div.slide_wrap > div.slide {display: none;;}
 .detail_page > section > div.info_body > aside > div.slide_wrap > div.slide > img {width: 100%;;}
-.detail_page > section > div.info_body > div {width: 45%; float: left; padding-left: 10px;}
+.detail_page > section > div.info_body > aside > div.thumb_wrap {overflow: hidden;}
+.detail_page > section > div.info_body > aside > div.thumb_wrap > div.thumb {width: 20%; float: left;;}
+.detail_page > section > div.info_body > aside > div.thumb_wrap > div.thumb > img {width: 100%;;}
+.detail_page > section > div.info_body > div {width: 45%; float: left; padding-left: 50px;}
 
 /* 푸터 */
 footer{width: 1200px; height: 80px; margin: 0 auto; border-top: 1px solid #c2b197;position: relative;}
