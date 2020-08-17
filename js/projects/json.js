@@ -128,3 +128,27 @@ var kukka_list = [
 		"price" : "12,900원|품절"
 	}
 ]
+
+var kukka_detailpage =
+	{
+		"filter":"플랜드 정기구독",
+		"thumb" :[
+			"/images/kukka/OrangeJasmine1.jpg",
+			"/images/kukka/OrangeJasmine2.jpg",
+			"/images/kukka/OrangeJasmine3.jpg",
+			"/images/kukka/OrangeJasmine4.jpg",
+			"/images/kukka/OrangeJasmine5.jpg"
+		],
+		"title":"[kukka X Habitat] 나의 우간다 오렌지 나무",
+		"subTitle":"당신은 오늘 우간다에 나무를 심었습니다 (1 for 1)",
+		"price" :"15000",
+		"sale" :"20%",
+		"defaultCnt" : "1",
+		"plantGuide" :[
+			"따뜻하고 습도가 높은 곳 (직사광선은 최대2-3시간)",
+			"습기가 있되, 흙이 늘 축축하지 않도록 통풍",
+			"건조하여 마르기 시작하면 X (특히 꽃이 피는 시기)",
+			"꽃이 지고 나면 가지치기"
+		],
+		"detail_info":"/images/kukka/detail_page_content.jpg"
+	}

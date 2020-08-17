@@ -50,11 +50,11 @@ header > div.category_wrap > ul.category > li > a {padding: 10px 0;}
 .intro > section.new_product > div.group_slide_container > ul.group_slide > li > img {width: 60%;}
 .intro > section.new_product > div.group_slide_container > ul.group_slide > li > p {font-size:14px;font-weight: bold;}
 .intro > section.new_product > div.group_slide_container > ul.group_slide > li > p.txt {font-size: 12px; color: #999;}
-.intro > section.new_product > div.group_slide_container > a.prev, 
+.intro > section.new_product > div.group_slide_container > a.prev,
 .intro > section.new_product > div.group_slide_container > a.next { cursor: pointer; position: absolute; top: 50%; width: auto; margin-top: -22px; padding: 16px;color: black; font-weight: bold;  font-size: 18px; transition: 0.3s ease; border-radius: 3px;}
 .intro > section.new_product > div.group_slide_container > a.prev {left: 0;}
 .intro > section.new_product > div.group_slide_container > a.next {right: 0; }
-.intro > section.new_product > div.group_slide_container > a.prev:hover, 
+.intro > section.new_product > div.group_slide_container > a.prev:hover,
 .intro > section.new_product > div.group_slide_container > a.next:hover {background-color: rgba(0,0,0,0.8); color: #fff;}
 
 .intro > section.introduction {background: url(../../images/kukka/wood.png); background-position: right; overflow: hidden;text-align: center; position: relative;}
@@ -112,7 +112,31 @@ header > div.category_wrap > ul.category > li > a {padding: 10px 0;}
 .detail_page > section > div.info_body > aside > div.thumb_wrap {overflow: hidden;}
 .detail_page > section > div.info_body > aside > div.thumb_wrap > div.thumb {width: 20%; float: left;;}
 .detail_page > section > div.info_body > aside > div.thumb_wrap > div.thumb > img {width: 100%;;}
-.detail_page > section > div.info_body > div {width: 45%; float: left; padding-left: 50px;}
+.detail_page > section > div.info_body > div {width: 45%; float: left; padding-left: 50px;text-align: left;}
+.detail_page > section > div.info_body > div > p.tit{font-size: 12px; font-weight: bold;}
+.detail_page > section > div.info_body > div > p.sub_tit{font-size: 16px; padding:5px 0;}
+.detail_page > section > div.info_body > div > p.price {overflow: hidden;margin-top: 10px;}
+.detail_page > section > div.info_body > div > p.price > span {display: block; float: left;}
+.detail_page > section > div.info_body > div > p.price > span.sale_per{color: #d3c5af;font-weight: bold;font-size: 35px; width: 80px;text-align: center;}
+.detail_page > section > div.info_body > div > p.price > span.origin_price{color: #d5d5d5;text-decoration: line-through;font-size: 13px; width: calc(100% - 80px)}
+.detail_page > section > div.info_body > div > p.price > span.sale_price{font-weight: bold; width: calc(100% - 80px); font-size: 18px;}
+.detail_page > section > div.info_body > div > p.price > span.origin_price::after{content: 'won';font-size: 10px;}
+.detail_page > section > div.info_body > div > p.price > span.sale_per::after{content: '%'; font-size: 10px;}
+.detail_page > section > div.info_body > div > p.price > span.sale_price::after{content: 'won';font-size: 10px;}
+.detail_page > section > div.info_body > div > p.pdt_cnt {line-height: 1; margin-top:30px;}
+.detail_page > section > div.info_body > div > p.pdt_cnt > span.tit{width: 80px;display: inline-block;text-align: center;font-size: 12px;}
+.detail_page > section > div.info_body > div > p.pdt_cnt > input {height: 30px; width: 50px; background-color: #f5f5f5; border: none;}
+.detail_page > section > div.info_body > div > p.pdt_cnt > span.btn_cnt {border: 1px solid #f5f5f5;width: 30px;height: 30px;display: inline-block;text-align: center;line-height: 30px;box-sizing: border-box;vertical-align: middle; cursor: pointer;}
+.detail_page > section > div.info_body > div > div.btn_wrap {font-size: 0; margin: 50px 0 10px;}
+.detail_page > section > div.info_body > div > div.btn_wrap > button{display: inline-block; cursor: pointer;}
+.detail_page > section > div.info_body > div > div.btn_wrap > button.btn_cart {background: none;width: calc(33.3333% - 5px);margin-right: 5px;height: 50px;color: #c2b197;border: 1px solid #c2b197;}
+.detail_page > section > div.info_body > div > div.btn_wrap > button.btn_buy {background: #c2b197; width: 66.6666%; height: 50px;color: #fff;border: 1px solid #c2b197;}
+.detail_page > section > div.info_body > div > div.btn_wrap > button.btn_cart:hover{background-color: rgba(0,0,0,0.1);}
+.detail_page > section > div.info_body > div > div.btn_wrap > button.btn_buy:hover {background: #9e917e;}
+
+.detail_page > section.tab {margin:50px 0; border-bottom: 1px solid #f5f5f5}
+.detail_page > section.tab > a{padding: 5px 15px; display: inline-block;font-size: 14px;}
+.detail_page > section.tab > a.on{border-bottom: 3px solid #d3c5af; }
 
 /* 푸터 */
 footer{width: 1200px; height: 80px; margin: 0 auto; border-top: 1px solid #c2b197;position: relative;}
@@ -148,7 +172,7 @@ button.cart {width: 100%; height: 60px; outline: none; border:none;font-size: 16
   .panel p{text-align: left;}
 
   .accordion:after {content: '+'; font-size: 16px;float: right; margin-left: 5px;}
-  .active:after {content: "-";}
+  .accordion.active:after {content: "-";}
 
 /***섹션2***/
 /***섹션2-1***/
@@ -174,11 +198,11 @@ p.hashTag {padding: 160px; font-weight: bold; text-transform: uppercase;}
 .prev:hover, .next:hover {background-color: rgba(0,0,0,0.8); color: #fff;}
 .fade {-webkit-animation-name: fade; -webkit-animation-duration: 1.5s; animation-name: fade; animation-duration: 1.5s;}
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 /***센션2-3***/
@@ -188,7 +212,7 @@ p.hashTag {padding: 160px; font-weight: bold; text-transform: uppercase;}
 .line:last-child{border-bottom: 1px solid;}
 .title>div{float: left; text-align: left;}
 .date{width: 20%; text-indent: 10px;}
-.subTitle{width: 70%;} 
-.score{width: 10%;} 
+.subTitle{width: 70%;}
+.score{width: 10%;}
 div.review {text-align: left; line-height: 1.4; font-size: 13px; padding: 10px; display: none; overflow: hidden;}
 .review>p{text-align: left; padding-bottom: 10px;}

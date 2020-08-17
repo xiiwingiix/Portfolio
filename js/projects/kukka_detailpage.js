@@ -1,3 +1,48 @@
+function get_Product(){
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', 'https://run.mocky.io/v3/286fb491-5bcd-4d59-9945-93c364e131ab');
+
+	xhr.onload = function(){
+		var data = JSON.parse(xhr.response);
+		var pdt_info = data;
+
+		console.log(data);
+		// location
+		var location_ele ='';
+		location_ele += '<a href="/index.html">HOME</a>&nbsp;&gt;&nbsp;';
+		location_ele += '<a href="./list.html">'+pdt_info.filter+'</a>&nbsp;&gt;&nbsp;';
+		location_ele += '<a href="#">'+pdt_info.title  +'</a>&nbsp;&gt;&nbsp;';
+
+		// slide
+		var slide_ele		 ='';
+		var slide_thumb_ele  ='';
+
+		pdt_info.thumb.forEach(function(item, idx){
+			var style = idx == 0 ? 'style="display:block;"' : '';
+			slide_ele += '<div class="slide" '+style+'><img src="'+item+'"></div>';
+			slide_thumb_ele += '<div class="thumb"><img class="demo cursor" src="'+item+'" onclick="currentSlide('+ (idx+1) +')" alt="ornange Jasmine tree"></div>';
+		});
+
+		var slide 		= document.querySelector('.slide_wrap');
+		var thumb_slide = document.querySelector('.thumb_wrap');
+
+		slide.innerHTML 		= slide_ele;
+		thumb_slide.innerHTML 	= slide_thumb_ele;
+
+	};
+
+	xhr.send()
+}
+get_Product()
+
+
+
+
+
+
+
+
+
 //섹션1_.firBx (이미지)
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -63,12 +108,12 @@ function currentSlide2(n) {
 function slide(n) {
     var i;
     var slides = document.getElementsByClassName("Slides");
-    if (n > slides.length) {a = 1}    
+    if (n > slides.length) {a = 1}
     if (n < 1) {a = slides.length}
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+        slides[i].style.display = "none";
     }
-  slides[a-1].style.display = "block";  
+  slides[a-1].style.display = "block";
 }
 
 //섹션2-3 (아코디언메뉴)
