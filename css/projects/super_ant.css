@@ -1,0 +1,14 @@
+:root {
+	--strong_en_font :'Roboto', sans-serif;
+	--strong_color : tomato
+}
+
+body {color: #818181;font-family: 'Noto Sans KR', sans-serif;}
+div.content {width: 1200px; margin: 0 auto;}
+div.content > section.top {font-family: var(--strong_en_font);font-weight: bold;overflow: hidden;}
+div.content > section.top > div.left {float: left; font-size: 100px;line-height: 1;color: var(--strong_color); }
+div.content > section.top > div.left > span{font-size: 20px;color: #212121;letter-spacing: 3px;}
+div.content > section.top > div.left > div.summary{font-size: 16px;color: #818181; margin-top:30px;font-weight: normal;}
+div.content > section.top > div.right {float: right;font-size: 400px;color: rgba(200,200,200,0.3); line-height: 1;}
+div.content > section.top > div.right > span {font-size: 100px;}
+div.content > section.body > table {width: 100%; text-align: center;}

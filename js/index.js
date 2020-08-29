@@ -1,4 +1,11 @@
 var work_array = [{
+	tit : 'SUPER_ANT+',
+	des : 'Publishig',
+	img : './images/card_game/card_thumnail.jpg',
+	alt : '[practice]card_game',
+	url : './html/projects/super_ant.html'
+},
+{
 	tit : 'CARD_GAME',
 	des : 'Publishig & develop by Nahye (100%)',
 	img : './images/card_game/card_thumnail.jpg',
@@ -52,8 +59,8 @@ $(document).ready(function(){
 	//sec3 타이핑 js
 	var typed5 = new Typed('#typed5', {
 		strings: [
-			'원하는 디자인에 맞춰 웹사이트를 제작할 수 있습니다.', 
-			'웹표준(HTML5 / CSS3 / jQuery)에 맞춰 퍼블리싱할 수 있습니다.', 
+			'원하는 디자인에 맞춰 웹사이트를 제작할 수 있습니다.',
+			'웹표준(HTML5 / CSS3 / jQuery)에 맞춰 퍼블리싱할 수 있습니다.',
 			'반응형 웹사이트를 제작할 수 있습니다.',
 			'모바일 웹을 제작할 수 있습니다.',
 			'디자인 관련 툴(Ps / Ai)을 사용할 수 있습니다.'
@@ -65,8 +72,8 @@ $(document).ready(function(){
 		smartBackspace: false,
 		loop: true
 	});
-	   
-	//work list 
+
+	//work list
 	var ele = '';
 	for(var i = 0; i < work_array.length; i++){
 		ele +=`
@@ -89,7 +96,7 @@ $(document).ready(function(){
 
 $(document).on('click','.btn_menu', function(){
   $('#gnb').show();
-  
+
   return false;
 });
 
