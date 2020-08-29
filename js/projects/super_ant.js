@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 			if (a_RP_ratio > 3 && q_RP_ratio > 3){
 				tblRow += '<tr>';
-				tblRow += '<td rowspan="2"><a href="https://finance.naver.com/item/main.nhn?code='+item.company_code+'">'+item.company_name+'</a></td>';
+				tblRow += '<td rowspan="2"><a href="https://finance.naver.com/item/main.nhn?code='+item.company_code+'" target="_blank">'+item.company_name+'</a></td>';
 				tblRow += '<td>연간('+item.annual_date+')</td>';
 				tblRow += '<td>'+ a_RP_ratio +'</td>';
 				tblRow += '<td>'+ item.annual_PBR +'</td>';
