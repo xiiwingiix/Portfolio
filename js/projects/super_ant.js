@@ -1,18 +1,19 @@
 var trading_dat = [];
 $(document).ready(function(){
-	$.ajax({type:"GET", url:"/js/projects/trading.json", dataType:"JSON", success : function(data) {
+	$.ajax({type:"GET", url:"/js/projects/trading_200830_02.json", dataType:"JSON", success : function(data) {
 		$('tbody').html('')
 
 		var tblRow = '';
 
 		tblRow += '<tr>';
 		tblRow += '	<th>회사명</th>';
+		tblRow += '	<th>거래대금</th>';
 		tblRow += '	<th>기준일</th>';
 		tblRow += '	<th>ROE/PER</th>';
 		tblRow += '	<th>PBR</th>';
-		tblRow += '	<th>부채비율</th>';
-		tblRow += '	<th>유보율</th>';
-		tblRow += '	<th>배당률</th>';
+		tblRow += '	<th>부채비율(%)</th>';
+		tblRow += '	<th>유보율(%)</th>';
+		tblRow += '	<th>배당률(%)</th>';
 		tblRow += '	<th>ROE</th>';
 		tblRow += '	<th>PER</th>';
 		tblRow += '</tr>';
@@ -23,14 +24,17 @@ $(document).ready(function(){
 			var a_RP_ratio = parseInt(item.annual_ROE / item.annual_PER);
 			var q_RP_ratio = parseInt(item.quarterly_ROE / item.quarterly_PER);
 
-			if (a_RP_ratio > 3 && q_RP_ratio > 3){
+			// if (item.annual_PBR > 1 && item.quarterly_PBR > 1 ) {return false;}
+
+			// if (a_RP_ratio > 1 && q_RP_ratio > 1){
 				tblRow += '<tr>';
 				tblRow += '<td rowspan="2"><a href="https://finance.naver.com/item/main.nhn?code='+item.company_code+'" target="_blank">'+item.company_name+'</a></td>';
+				tblRow += '<td rowspan="2">'+item.transaction_price+'백만</td>';
 				tblRow += '<td>연간('+item.annual_date+')</td>';
 				tblRow += '<td>'+ a_RP_ratio +'</td>';
 				tblRow += '<td>'+ item.annual_PBR +'</td>';
-				tblRow += '<td>'+ item.annual_debt +'</td>';
-				tblRow += '<td>'+ item.annual_Reserve_ration +'</td>';
+				tblRow += '<td>'+ parseInt(item.annual_debt) +'</td>';
+				tblRow += '<td>'+ parseInt(item.annual_Reserve_ration) +'</td>';
 				tblRow += '<td>'+ item.annual_dividend_yield_ratio +'</td>';
 				tblRow += '<td>'+ item.annual_ROE +'</td>';
 				tblRow += '<td>'+ item.annual_PER +'</td>';
@@ -40,13 +44,13 @@ $(document).ready(function(){
 				tblRow += '<td>분기('+item.quarterly_date+')</td>';
 				tblRow += '<td>'+ q_RP_ratio +'</td>';
 				tblRow += '<td>'+ item.quarterly_PBR +'</td>';
-				tblRow += '<td>'+ item.quarterly_debt +'</td>';
-				tblRow += '<td>'+ item.quarterly_Reserve_ration +'</td>';
+				tblRow += '<td>'+ parseInt(item.quarterly_debt) +'</td>';
+				tblRow += '<td>'+ parseInt(item.quarterly_Reserve_ration) +'</td>';
 				tblRow += '<td>'+ item.quarterly_dividend_yield_ratio +'</td>';
 				tblRow += '<td>'+ item.quarterly_ROE +'</td>';
 				tblRow += '<td>'+ item.quarterly_PER +'</td>';
 				tblRow += '</tr>'
-			}
+			// }
 
 			if (idx == 100) {return false;}
 		});

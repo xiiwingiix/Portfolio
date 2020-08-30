@@ -1,7 +1,7 @@
 var work_array = [{
 	tit : 'SUPER_ANT+',
 	des : 'Publishig',
-	img : './images/card_game/card_thumnail.jpg',
+	img : '/images/super_ant/ant_thumbnail.jpg',
 	alt : '[practice]card_game',
 	url : './html/projects/super_ant.html'
 },
