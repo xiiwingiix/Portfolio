@@ -1,12 +1,13 @@
 var trading_dat = [];
 $(document).ready(function(){
-	$.ajax({type:"GET", url:"/js/projects/trading_200830_02.json", dataType:"JSON", success : function(data) {
+	$.ajax({type:"GET", url:"/js/projects/trading_200908.json", dataType:"JSON", success : function(data) {
 		$('tbody').html('')
 
 		var tblRow = '';
 
 		tblRow += '<tr>';
 		tblRow += '	<th>회사명</th>';
+		tblRow += '	<th>현재가</th>';
 		tblRow += '	<th>거래대금</th>';
 		tblRow += '	<th>기준일</th>';
 		tblRow += '	<th>ROE/PER</th>';
@@ -26,9 +27,10 @@ $(document).ready(function(){
 
 			// if (item.annual_PBR > 1 && item.quarterly_PBR > 1 ) {return false;}
 
-			// if (a_RP_ratio > 1 && q_RP_ratio > 1){
+			// if (a_RP_ratio > 1.5 && q_RP_ratio > 1.5){
 				tblRow += '<tr>';
 				tblRow += '<td rowspan="2"><a href="https://finance.naver.com/item/main.nhn?code='+item.company_code+'" target="_blank">'+item.company_name+'</a></td>';
+				tblRow += '<td rowspan="2">'+item.cur_price+'</td>';
 				tblRow += '<td rowspan="2">'+item.transaction_price+'백만</td>';
 				tblRow += '<td>연간('+item.annual_date+')</td>';
 				tblRow += '<td>'+ a_RP_ratio +'</td>';
