@@ -1,6 +1,6 @@
 var trading_dat = [];
 $(document).ready(function(){
-	$.ajax({type:"GET", url:"/js/projects/trading_200908.json", dataType:"JSON", success : function(data) {
+	$.ajax({type:"GET", url:"/js/projects/trading_200910.json", dataType:"JSON", success : function(data) {
 		$('tbody').html('')
 
 		var tblRow = '';
