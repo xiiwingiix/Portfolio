@@ -12,4 +12,5 @@ div.content > section.top > div.left > div.summary{font-size: 16px;color: #81818
 div.content > section.top > div.right {float: right;font-size: 400px;color: rgba(200,200,200,0.3); line-height: 1;}
 div.content > section.top > div.right > span {font-size: 100px;}
 div.content > section.body > table {width: 100%; text-align: center;}
-div.content > section.body > table tr > td {padding: 5px 0;}
+div.content > section.body > table tr > td {padding: 5px 0;border-bottom: 1px solid #d5d5d5}
+div.content > section.body > table tr:nth-child(2n+2) > td {border: none;}
